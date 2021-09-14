@@ -11,6 +11,8 @@ const Welcoming = () => (
       <Typography variant={'h4'}>
         We glad to see you to knowing about how increasing your height Just
         answered a few question
+
+        123
       </Typography>
     </section>
     <footer>
