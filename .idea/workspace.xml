@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df52df07-f3e9-4be4-94e7-0df6cf6b1777" name="Changes" comment="Uploading the project files.">
+    <list default="true" id="df52df07-f3e9-4be4-94e7-0df6cf6b1777" name="Changes" comment="Just for test">
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Article/ArticleDivider.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Article/ArticleDivider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Article/ArticleFooter.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Article/ArticleFooter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Article/ArticleHeader.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Article/ArticleHeader.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Article/ArticleSection.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Article/ArticleSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/utilites/getClassName.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eslint.js" beforeDir="false" afterPath="$PROJECT_DIR$/eslint.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Article/Article.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Article/Article.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Article/Article.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Article/Article.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Theme.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Theme.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/SetAgeRange.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/SetAgeRange.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/WelcomeWizard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/WelcomeWizard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/Welcoming.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Welcoming.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +33,8 @@
       <list>
         <option value="TypeScript JSX File" />
         <option value="CSS File" />
-        <option value="TypeScript File" />
         <option value="SCSS File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -32,7 +50,9 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="1y5u8olyb5z7YNDE2mzeykWlH4l" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -42,7 +62,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Roaming/npm/node_modules/prettier" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/lib" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -51,15 +71,18 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\Muhamad\AppData\Roaming\npm\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
     <property name="ts.external.directory.path" value="C:\Users\Muhamad\WebstormProjects\teen-workout\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Muhamad\WebstormProjects\teen-workout\src\lib" />
+      <recent name="C:\Users\Muhamad\WebstormProjects\teen-workout\src\components\UI" />
       <recent name="C:\Users\m.zolfaghari\Desktop\teen-workout" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Muhamad\WebstormProjects\teen-workout\src\lib\utilites" />
       <recent name="C:\Users\Muhamad\WebstormProjects\teen-workout\src" />
     </key>
   </component>
@@ -90,7 +113,7 @@
       <workItem from="1631553999412" duration="1168000" />
       <workItem from="1631555206955" duration="7569000" />
       <workItem from="1631593160732" duration="4225000" />
-      <workItem from="1631640110794" duration="1238000" />
+      <workItem from="1631640110794" duration="10028000" />
     </task>
     <task id="LOCAL-00001" summary="Uploading the project files.">
       <created>1631640363088</created>
@@ -141,7 +164,21 @@
       <option name="project" value="LOCAL" />
       <updated>1631640638998</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Just for test">
+      <created>1631641372497</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1631641372497</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Just for test">
+      <created>1631647933024</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1631647933024</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,7 +219,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Uploading the project files." />
-    <option name="LAST_COMMIT_MESSAGE" value="Uploading the project files." />
+    <MESSAGE value="Just for test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Just for test" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

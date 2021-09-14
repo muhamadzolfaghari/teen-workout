@@ -1,21 +1,12 @@
 .root {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-
-  section {
-    height: 100%;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-
-  footer {
-    display: flex;
-    margin-top: auto;
-    justify-content: flex-end;
-
-    button {
-      width: 40%;
-    }
-  }
+  top: 5.5rem;
+  position: fixed;
+  height: 20rem;
+  bottom: 3rem;
+  width: 420px;
+  z-index: 2;
+  left: calc(50% - 420px / 2);
+  background-color: #fff;
+  box-shadow: 0 0 9px 6px #e0e0e0;
+  border-radius: 20px;
 }

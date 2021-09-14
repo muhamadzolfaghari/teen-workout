@@ -1,12 +1,11 @@
 import { createTheme, ThemeProvider } from '@mui/material';
 import { CacheProvider } from '@emotion/react';
 import createCache from '@emotion/cache';
-import { FC } from 'react';
+import { PropsWithChildren } from 'react';
 
 const defaultTheme = createTheme();
 
 export const theme = createTheme({
-  direction: 'rtl',
   components: {
     MuiButton: {
       styleOverrides: {
@@ -18,13 +17,13 @@ export const theme = createTheme({
   },
   palette: {
     primary: {
-      main: '#ff5722',
+      light: '#ffd95b',
+      main: '#ffa726',
+      dark: '#c77800',
     },
   },
-
   typography: {
-    fontSize: 12.5,
-    fontWeightMedium: 600,
+    fontSize: 16,
     fontFamily: 'Glory, sans-serif',
     h1: {
       fontSize: '3em',
@@ -33,9 +32,9 @@ export const theme = createTheme({
       // fontWeight: defaultTheme.typography.fontWeightRegular,
     },
     h2: {
-      fontSize: '2em',
-      paddingBottom: '0.9em',
-      fontWeight: defaultTheme.typography.fontWeightRegular,
+      // fontSize: '2em',
+      // paddingBottom: '0.9em',
+      // fontWeight: defaultTheme.typography.fontWeightRegular,
     },
     h3: {
       fontSize: '1.5em',
@@ -60,9 +59,9 @@ const cache = createCache({
   prepend: true,
 });
 
-const Theme: FC = (props) => (
+const Theme = ({ children }: PropsWithChildren<any>) => (
   <ThemeProvider theme={theme}>
-    <CacheProvider value={cache}> {props.children} </CacheProvider>
+    <CacheProvider value={cache}> {children} </CacheProvider>
   </ThemeProvider>
 );
 
