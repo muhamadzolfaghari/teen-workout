@@ -1,0 +1,21 @@
+.root {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+
+  section {
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  footer {
+    display: flex;
+    margin-top: auto;
+    justify-content: flex-end;
+
+    button {
+      width: 40%;
+    }
+  }
+}
