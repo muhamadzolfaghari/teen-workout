@@ -5,14 +5,14 @@ import WelcomeWizard from './components/WelcomeWizard/WelcomeWizard';
 
 function App() {
   return (
-    <>
+    <div className='App'>
       <header>The header</header>
       <main>
         <Container maxWidth={'sm'}>
           <WelcomeWizard />
         </Container>
       </main>
-    </>
+    </div>
   );
 }
 

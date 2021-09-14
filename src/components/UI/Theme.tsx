@@ -33,9 +33,9 @@ export const theme = createTheme({
       // fontWeight: defaultTheme.typography.fontWeightRegular,
     },
     h2: {
-      fontSize: '2em',
-      paddingBottom: '0.9em',
-      fontWeight: defaultTheme.typography.fontWeightRegular,
+      // fontSize: '2em',
+      // paddingBottom: '0.9em',
+      // fontWeight: defaultTheme.typography.fontWeightRegular,
     },
     h3: {
       fontSize: '1.5em',
