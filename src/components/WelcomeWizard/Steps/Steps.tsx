@@ -1,7 +1,7 @@
-import Article from '../UI/Article/Article';
+import Article from '../../UI/Article/Article';
 import Step from './Step';
-import { Values } from '../../types/Values';
-import { WelcomeWizardStep } from '../../lib/welcomeWizard.const';
+import { Values } from '../../../types/Values';
+import { WelcomeWizardStep } from '../../../lib/welcomeWizard.const';
 
 interface IProps {
   step: Values<typeof WelcomeWizardStep>;

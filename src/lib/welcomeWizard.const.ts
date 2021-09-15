@@ -1,5 +1,8 @@
 export const WelcomeWizardStep = {
-  WELCOMING: 'welcoming',
-  COMPUTE_MBI: 'compute-mbi',
-  SET_AGE_RANGE: 'set-age-range',
+  WELCOMING: 0,
+  SET_GENDER: 1,
+  COMPUTE_MBI: 3,
+  SET_AGE_RANGE:  2 ,
 };
+
+export const WelcomeWizardStepCount = Object.keys(WelcomeWizardStep).length;
