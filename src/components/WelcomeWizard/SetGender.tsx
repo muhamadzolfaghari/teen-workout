@@ -1,28 +1,50 @@
-import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import ArticleSection from '../UI/Article/ArticleSection';
 import ArticleFooter from '../UI/Article/ArticleFooter';
+import Description from './Description';
+import {
+  activeStepChanged,
+  genderChanged,
+} from '../../features/welcomeWizardSlice';
+import { useAppDispatch } from '../../app/hooks';
+import { GenderType } from '../../types/GenderType';
+import { WelcomeWizardStep } from '../../lib/welcomeWizard.const';
+import ArticleHeader from '../UI/Article/ArticleHeader';
 
-const SetAgeRange = () => (
-  <>
-    <ArticleSection>
-      <Typography variant={'body1'}>
-        Which one is best for describing your{' '}
-        <Typography component={'span'} color={'primary'} fontSize={'inherit'}>
-          age range
-        </Typography>
-        ?{' '}
-      </Typography>
-    </ArticleSection>
-    <ArticleFooter>
-      <Button size={'large'} variant={'contained'}>
-        👦 Before 12
-      </Button>
-      <Button size={'large'} variant={'contained'}>
-        👨 After 12
-      </Button>
-    </ArticleFooter>
-  </>
-);
+const SetGender = () => {
+  const dispatch = useAppDispatch();
 
-export default SetAgeRange;
+  const handleButtonClick = (gender: GenderType) => () => {
+    dispatch(genderChanged(gender));
+    dispatch(activeStepChanged(WelcomeWizardStep.SET_AGE_RANGE));
+  };
+
+  return (
+    <>
+      <ArticleHeader />
+      <ArticleSection>
+        <Description>
+          What is your <mark>gender</mark>?
+        </Description>
+      </ArticleSection>
+      <ArticleFooter>
+        <Button
+          size={'large'}
+          variant={'contained'}
+          onClick={handleButtonClick('man')}
+        >
+          🧑 Man
+        </Button>
+        <Button
+          size={'large'}
+          variant={'contained'}
+          onClick={handleButtonClick('woman')}
+        >
+          👧 Woman
+        </Button>
+      </ArticleFooter>
+    </>
+  );
+};
+
+export default SetGender;

@@ -1,18 +1,16 @@
-import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import ArticleSection from '../UI/Article/ArticleSection';
 import ArticleFooter from '../UI/Article/ArticleFooter';
+import Description from './Description';
+import ArticleHeader from '../UI/Article/ArticleHeader';
 
 const SetAgeRange = () => (
   <>
+    <ArticleHeader />
     <ArticleSection>
-      <Typography variant={'body1'}>
-        Which one is best for describing your{' '}
-        <Typography component={'span'} color={'primary'} fontSize={'inherit'}>
-          age range
-        </Typography>
-        ?{' '}
-      </Typography>
+      <Description>
+        Which one is best for describing your <mark>age range</mark>?
+      </Description>
     </ArticleSection>
     <ArticleFooter>
       <Button size={'large'} variant={'contained'}>

@@ -24,6 +24,9 @@ export const theme = createTheme({
   },
   typography: {
     fontSize: 16,
+    allVariants:{
+      color: '#444444'
+    },
     fontFamily: 'Glory, sans-serif',
     h1: {
       fontSize: '3em',
@@ -32,8 +35,8 @@ export const theme = createTheme({
       // fontWeight: defaultTheme.typography.fontWeightRegular,
     },
     h2: {
-      // fontSize: '2em',
-      // paddingBottom: '0.9em',
+      fontSize: '2em',
+      paddingBottom: '0.9em',
       // fontWeight: defaultTheme.typography.fontWeightRegular,
     },
     h3: {
@@ -47,9 +50,9 @@ export const theme = createTheme({
       fontWeight: defaultTheme.typography.fontWeightBold,
     },
     h5: {
-      fontSize: '1.1em',
-      paddingBottom: '0.7em',
-      fontWeight: defaultTheme.typography.fontWeightBold,
+      // fontSize: '1.1em',
+      // paddingBottom: '0.7em',
+      // fontWeight: defaultTheme.typography.fontWeightBold,
     },
   },
 });
