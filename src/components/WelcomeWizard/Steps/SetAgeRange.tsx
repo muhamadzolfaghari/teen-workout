@@ -1,10 +1,10 @@
-import Button from '@mui/material/Button';
 import ArticleSection from '../../UI/Article/ArticleSection';
 import ArticleFooter from '../../UI/Article/ArticleFooter';
 import Description from '../Description';
 import ArticleHeader from '../../UI/Article/ArticleHeader';
 import { useSelector } from 'react-redux';
 import { welcomeWizardSelector } from '../../../app/hooks';
+import Button from './Button';
 
 const SetAgeRange = () => {
   const { gender } = useSelector(welcomeWizardSelector);

@@ -1,4 +1,3 @@
-import Button from '@mui/material/Button';
 import ArticleSection from '../../UI/Article/ArticleSection';
 import ArticleFooter from '../../UI/Article/ArticleFooter';
 import Description from '../Description';
@@ -10,6 +9,7 @@ import { useAppDispatch } from '../../../app/hooks';
 import { GenderType } from '../../../types/GenderType';
 import { WelcomeWizardStep } from '../../../lib/welcomeWizard.const';
 import ArticleHeader from '../../UI/Article/ArticleHeader';
+import Button from './Button';
 
 const SetGender = () => {
   const dispatch = useAppDispatch();

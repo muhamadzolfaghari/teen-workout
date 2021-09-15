@@ -10,7 +10,7 @@ export const theme = createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
-          borderRadius: '20px',
+          borderRadius: 20,
         },
       },
     },
@@ -24,8 +24,8 @@ export const theme = createTheme({
   },
   typography: {
     fontSize: 16,
-    allVariants:{
-      color: '#444444'
+    allVariants: {
+      color: '#444444',
     },
     fontFamily: 'Glory, sans-serif',
     h1: {
