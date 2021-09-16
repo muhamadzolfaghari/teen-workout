@@ -2,6 +2,8 @@
   margin-top: 2rem;
   padding: 0 2rem;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
   height: calc(100% - 30rem);
 
   &[hidden] {

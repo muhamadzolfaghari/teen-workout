@@ -2,12 +2,11 @@ import ArticleSection from '../../UI/Article/ArticleSection';
 import ArticleFooter from '../../UI/Article/ArticleFooter';
 import Description from '../Description';
 import {
-  activeStepChanged,
   genderChanged,
+  stepIncremented,
 } from '../../../features/welcomeWizardSlice';
 import { useAppDispatch } from '../../../app/hooks';
 import { GenderType } from '../../../types/GenderType';
-import { WelcomeWizardStep } from '../../../lib/welcomeWizard.const';
 import ArticleHeader from '../../UI/Article/ArticleHeader';
 import Button from './Button';
 
@@ -15,8 +14,8 @@ const SetGender = () => {
   const dispatch = useAppDispatch();
 
   const handleButtonClick = (gender: GenderType) => () => {
+    dispatch(stepIncremented());
     dispatch(genderChanged(gender));
-    dispatch(activeStepChanged(WelcomeWizardStep.SET_AGE_RANGE));
   };
 
   return (
@@ -28,20 +27,8 @@ const SetGender = () => {
         </Description>
       </ArticleSection>
       <ArticleFooter>
-        <Button
-          size={'large'}
-          variant={'contained'}
-          onClick={handleButtonClick('man')}
-        >
-          🧑 Man
-        </Button>
-        <Button
-          size={'large'}
-          variant={'contained'}
-          onClick={handleButtonClick('woman')}
-        >
-          👧 Woman
-        </Button>
+        <Button onClick={handleButtonClick('male')}>🧑 Male</Button>
+        <Button onClick={handleButtonClick('female')}>👧 Female</Button>
       </ArticleFooter>
     </>
   );

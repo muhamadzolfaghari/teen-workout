@@ -3,11 +3,19 @@ import ArticleFooter from '../../UI/Article/ArticleFooter';
 import Description from '../Description';
 import ArticleHeader from '../../UI/Article/ArticleHeader';
 import { useSelector } from 'react-redux';
-import { welcomeWizardSelector } from '../../../app/hooks';
+import { useAppDispatch, welcomeWizardSelector } from '../../../app/hooks';
 import Button from './Button';
+import { ageRangeChanged, stepIncremented } from '../../../features/welcomeWizardSlice';
+import { AgeRangeType } from '../../../types/AgeRangeType';
 
 const SetAgeRange = () => {
+  const dispatch = useAppDispatch();
   const { gender } = useSelector(welcomeWizardSelector);
+
+  const handleClick = (ageRange: AgeRangeType) => () => {
+    dispatch(stepIncremented());
+    dispatch(ageRangeChanged(ageRange));
+  };
 
   return (
     <>
@@ -18,11 +26,19 @@ const SetAgeRange = () => {
         </Description>
       </ArticleSection>
       <ArticleFooter>
-        <Button size={'large'} variant={'contained'}>
-          {gender === 'man' ? '👦' : '👧'} Before 12
+        <Button
+          size={'large'}
+          variant={'contained'}
+          onClick={handleClick('upper 12')}
+        >
+          {gender === 'male' ? '👦' : '👧'} Before 12
         </Button>
-        <Button size={'large'} variant={'contained'}>
-          {gender === 'man' ? '👨' : '🧑'} After 12
+        <Button
+          size={'large'}
+          variant={'contained'}
+          onClick={handleClick('under 12')}
+        >
+          {gender === 'male' ? '👨' : '🧑'} After 12
         </Button>
       </ArticleFooter>
     </>

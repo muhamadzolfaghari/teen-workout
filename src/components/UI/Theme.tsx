@@ -10,6 +10,7 @@ export const theme = createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
+          color: '#444444',
           borderRadius: 20,
         },
       },
