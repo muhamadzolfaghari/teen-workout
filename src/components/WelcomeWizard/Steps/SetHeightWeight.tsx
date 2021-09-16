@@ -23,6 +23,7 @@ const SetHeightWeight = () => {
             name={'height'}
             label={'Height'}
             onBlur={form.handleBlur}
+            value={form.values.height}
             onChange={form.handleChange}
             error={form.touched.height && !!form.errors.height}
             helperText={form.touched.height && form.errors.height}
@@ -32,6 +33,7 @@ const SetHeightWeight = () => {
             name={'weight'}
             label={'Weight'}
             onBlur={form.handleBlur}
+            value={form.values.weight}
             onChange={form.handleChange}
             error={form.touched.weight && !!form.errors.weight}
             helperText={form.touched.weight && form.errors.weight}
