@@ -31,16 +31,16 @@ const SetGender = () => {
         <Button
           size={'large'}
           variant={'contained'}
-          onClick={handleButtonClick('man')}
+          onClick={handleButtonClick('male')}
         >
-          🧑 Man
+          🧑 Male
         </Button>
         <Button
           size={'large'}
           variant={'contained'}
-          onClick={handleButtonClick('woman')}
+          onClick={handleButtonClick('female')}
         >
-          👧 Woman
+          👧 Female
         </Button>
       </ArticleFooter>
     </>

@@ -19,10 +19,10 @@ const SetAgeRange = () => {
       </ArticleSection>
       <ArticleFooter>
         <Button size={'large'} variant={'contained'}>
-          {gender === 'man' ? '👦' : '👧'} Before 12
+          {gender === 'male' ? '👦' : '👧'} Before 12
         </Button>
         <Button size={'large'} variant={'contained'}>
-          {gender === 'man' ? '👨' : '🧑'} After 12
+          {gender === 'male' ? '👨' : '🧑'} After 12
         </Button>
       </ArticleFooter>
     </>

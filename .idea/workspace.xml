@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df52df07-f3e9-4be4-94e7-0df6cf6b1777" name="Changes" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/App.tsx&#10;#&#9;src/components/UI/Article/Article.module.scss&#10;#&#9;src/components/UI/Article/Article.tsx&#10;#&#9;src/components/WelcomeWizard/SetAgeRange.tsx&#10;#&#9;src/components/WelcomeWizard/Welcoming.tsx">
-      <change afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/Button.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/Button.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Theme.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Theme.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/Welcoming.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/Welcoming.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetAgeRange.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetAgeRange.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetGender.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetGender.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/GenderType.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/GenderType.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +108,8 @@
       <workItem from="1631553999412" duration="1168000" />
       <workItem from="1631555206955" duration="7569000" />
       <workItem from="1631593160732" duration="4225000" />
-      <workItem from="1631640110794" duration="19620000" />
+      <workItem from="1631640110794" duration="20696000" />
+      <workItem from="1631808843780" duration="389000" />
     </task>
     <task id="LOCAL-00001" summary="Uploading the project files.">
       <created>1631640363088</created>
@@ -201,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631740049631</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/App.tsx&#10;#&#9;src/components/UI/Article/Article.module.scss&#10;#&#9;src/components/UI/Article/Article.tsx&#10;#&#9;src/components/WelcomeWizard/SetAgeRange.tsx&#10;#&#9;src/components/WelcomeWizard/Welcoming.tsx">
+      <created>1631741540851</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1631741540851</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +252,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Uploading the project files." />
