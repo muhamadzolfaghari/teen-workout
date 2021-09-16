@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df52df07-f3e9-4be4-94e7-0df6cf6b1777" name="Changes" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/App.tsx&#10;#&#9;src/components/UI/Article/Article.module.scss&#10;#&#9;src/components/UI/Article/Article.tsx&#10;#&#9;src/components/WelcomeWizard/SetAgeRange.tsx&#10;#&#9;src/components/WelcomeWizard/Welcoming.tsx">
-      <change afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetHeightWeight.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetHeightWeight.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/AgeRangeType.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/welcomeWizard/useSetHeightWeight.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetAgeRange.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetAgeRange.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetGender.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetGender.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/Step.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/Step.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/Welcoming.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/Welcoming.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/welcomeWizardSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/welcomeWizardSlice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/welcomeWizard.const.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/welcomeWizard.const.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetHeightWeight.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetHeightWeight.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetHeightWeight.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetHeightWeight.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +20,8 @@
         <option value="TypeScript JSX File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="TypeScript File" />
         <option value="SCSS File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -114,7 +110,7 @@
       <workItem from="1631555206955" duration="7569000" />
       <workItem from="1631593160732" duration="4225000" />
       <workItem from="1631640110794" duration="20696000" />
-      <workItem from="1631808843780" duration="3038000" />
+      <workItem from="1631808843780" duration="5025000" />
     </task>
     <task id="LOCAL-00001" summary="Uploading the project files.">
       <created>1631640363088</created>
@@ -221,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631809238093</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/App.tsx&#10;#&#9;src/components/UI/Article/Article.module.scss&#10;#&#9;src/components/UI/Article/Article.tsx&#10;#&#9;src/components/WelcomeWizard/SetAgeRange.tsx&#10;#&#9;src/components/WelcomeWizard/Welcoming.tsx">
+      <created>1631812032405</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1631812032405</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
