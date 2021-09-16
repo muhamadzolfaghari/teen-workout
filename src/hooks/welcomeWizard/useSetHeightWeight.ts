@@ -1,10 +1,8 @@
 import { useFormik } from 'formik';
 import * as yup from 'yup';
-
-interface IHeightWeight {
-  height: number;
-  weight: number;
-}
+import { useAppDispatch } from '../../app/hooks';
+import { heightWeightChanged } from '../../features/welcomeWizardSlice';
+import IHeightWeight from '../../interfaces/IHeightWeight';
 
 const validationSchema = yup.object({
   weight: yup
@@ -23,11 +21,16 @@ const initialValues: Record<keyof IHeightWeight, string> = {
 };
 
 const useSetHeightWeight = () => {
+  const dispatch = useAppDispatch();
   const form = useFormik({
     initialValues,
     validationSchema,
     onSubmit(values) {
-      console.log(values);
+      const heightWeight: IHeightWeight = {
+        height: +values.height,
+        weight: +values.weight,
+      };
+      dispatch(heightWeightChanged(heightWeight));
     },
   });
 

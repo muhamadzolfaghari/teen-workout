@@ -3,9 +3,9 @@ import { WelcomeWizardStep } from '../lib/welcomeWizard.const';
 import { Values } from '../types/Values';
 import { GenderType } from '../types/GenderType';
 import { AgeRangeType } from '../types/AgeRangeType';
+import IHeightWeight from '../interfaces/IHeightWeight';
 
 type StepType = Values<typeof WelcomeWizardStep>;
-
 
 interface IState {
   height: number;
@@ -18,7 +18,7 @@ interface IState {
 const initialState: IState = {
   height: 0,
   weight: 0,
-  activeStep: WelcomeWizardStep.SET_HEIGHT_WEIGHT,
+  activeStep: WelcomeWizardStep.WELCOMING,
 };
 
 const welcomeWizardSlice = createSlice({
@@ -37,11 +37,8 @@ const welcomeWizardSlice = createSlice({
     ageRangeChanged(state, action: PayloadAction<AgeRangeType>) {
       state.ageRange = action.payload;
     },
-    heightWeightChanged(
-      state,
-      action: PayloadAction<[height: number, weight: number]>
-    ) {
-      const [height, weight] = action.payload;
+    heightWeightChanged(state, action: PayloadAction<IHeightWeight>) {
+      const { height, weight } = action.payload;
       state = { ...state, height, weight };
     },
   },
