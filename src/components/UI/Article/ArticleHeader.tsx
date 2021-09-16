@@ -13,7 +13,6 @@ const ArticleHeader = ({
 }: PropsWithChildren<HTMLAttributes<any>>) => {
   const dispatch = useAppDispatch();
   const { activeStep } = useSelector(welcomeWizardSelector);
-  console.log(activeStep);
 
   const handleClick = () => {
     dispatch(stepDecremented());

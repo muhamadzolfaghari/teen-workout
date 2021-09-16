@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df52df07-f3e9-4be4-94e7-0df6cf6b1777" name="Changes" comment="SetHeightWeight.tsx updated." />
+    <list default="true" id="df52df07-f3e9-4be4-94e7-0df6cf6b1777" name="Changes" comment="SetHeightWeight.tsx updated and first test succeed.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Article/ArticleHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Article/ArticleHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/welcomeWizardSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/welcomeWizardSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/welcomeWizard/useSetHeightWeight.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/welcomeWizard/useSetHeightWeight.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,7 +108,7 @@
       <workItem from="1631555206955" duration="7569000" />
       <workItem from="1631593160732" duration="4225000" />
       <workItem from="1631640110794" duration="20696000" />
-      <workItem from="1631808843780" duration="5346000" />
+      <workItem from="1631808843780" duration="7557000" />
     </task>
     <task id="LOCAL-00001" summary="Uploading the project files.">
       <created>1631640363088</created>
@@ -231,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631814137042</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="SetHeightWeight.tsx updated and first test succeed.">
+      <created>1631814520271</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1631814520271</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +297,8 @@
     <MESSAGE value="Welcome wizard completed." />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/components/WelcomeWizard/Steps/SetAgeRange.tsx&#10;#&#9;src/components/WelcomeWizard/Steps/SetGender.tsx" />
     <MESSAGE value="SetHeightWeight.tsx updated." />
-    <option name="LAST_COMMIT_MESSAGE" value="SetHeightWeight.tsx updated." />
+    <MESSAGE value="SetHeightWeight.tsx updated and first test succeed." />
+    <option name="LAST_COMMIT_MESSAGE" value="SetHeightWeight.tsx updated and first test succeed." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

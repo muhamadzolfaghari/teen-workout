@@ -39,7 +39,8 @@ const welcomeWizardSlice = createSlice({
     },
     heightWeightChanged(state, action: PayloadAction<IHeightWeight>) {
       const { height, weight } = action.payload;
-      state = { ...state, height, weight };
+      state.weight = weight;
+      state.height = height;
     },
   },
 });
