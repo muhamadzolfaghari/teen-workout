@@ -2,9 +2,9 @@ import { useFormik } from 'formik';
 import * as yup from 'yup';
 import { useAppDispatch, welcomeWizardSelector } from '../../app/hooks';
 import { heightWeightChanged } from '../../features/welcomeWizardSlice';
-import IHeightWeight from '../../interfaces/IHeightWeight';
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
+import IHeightWeight from '../../interface/IHeightWeight';
 
 const validationSchema = yup.object({
   weight: yup

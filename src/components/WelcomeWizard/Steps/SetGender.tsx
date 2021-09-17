@@ -9,6 +9,7 @@ import { useAppDispatch } from '../../../app/hooks';
 import { GenderType } from '../../../types/GenderType';
 import ArticleHeader from '../../UI/Article/ArticleHeader';
 import Button from './Button';
+import Article from '../../UI/Article/Article';
 
 const SetGender = () => {
   const dispatch = useAppDispatch();
@@ -19,7 +20,7 @@ const SetGender = () => {
   };
 
   return (
-    <>
+    <Article>
       <ArticleHeader />
       <ArticleSection>
         <Description>
@@ -30,7 +31,7 @@ const SetGender = () => {
         <Button onClick={handleButtonClick('male')}>🧑 Male</Button>
         <Button onClick={handleButtonClick('female')}>👧 Female</Button>
       </ArticleFooter>
-    </>
+    </Article>
   );
 };
 

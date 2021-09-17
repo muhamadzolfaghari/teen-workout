@@ -6,6 +6,7 @@ import Description from '../Description';
 import ArticleFooter from '../../UI/Article/ArticleFooter';
 import Button from './Button';
 import { stepIncremented } from '../../../features/welcomeWizardSlice';
+import Article from '../../UI/Article/Article';
 
 const Welcoming = () => {
   const dispatch = useAppDispatch();
@@ -15,10 +16,10 @@ const Welcoming = () => {
   };
 
   return (
-    <>
+    <Article>
       <ArticleHeader />
       <ArticleSection>
-        <Typography variant={'h2'}>Teen Workout</Typography>
+        <Typography variant={'h2'} gutterBottom>Teen Workout</Typography>
         <Description>
           you will have everything you need to increase your height, for free!
         </Description>
@@ -27,8 +28,8 @@ const Welcoming = () => {
         <div />
         <Button onClick={handleButtonClick}>{"Let's go"}</Button>
       </ArticleFooter>
-    </>
+    </Article>
   );
-};
+}
 
 export default Welcoming;

@@ -37,7 +37,7 @@ export const theme = createTheme({
     },
     h2: {
       fontSize: '2em',
-      paddingBottom: '0.9em',
+      // paddingBottom: '0.9em',
       // fontWeight: defaultTheme.typography.fontWeightRegular,
     },
     h3: {

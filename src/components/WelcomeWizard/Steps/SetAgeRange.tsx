@@ -7,6 +7,7 @@ import { useAppDispatch, welcomeWizardSelector } from '../../../app/hooks';
 import Button from './Button';
 import { ageRangeChanged, stepIncremented } from '../../../features/welcomeWizardSlice';
 import { AgeRangeType } from '../../../types/AgeRangeType';
+import Article from '../../UI/Article/Article';
 
 const SetAgeRange = () => {
   const dispatch = useAppDispatch();
@@ -18,7 +19,7 @@ const SetAgeRange = () => {
   };
 
   return (
-    <>
+    <Article>
       <ArticleHeader />
       <ArticleSection>
         <Description>
@@ -41,7 +42,7 @@ const SetAgeRange = () => {
           {gender === 'male' ? '👨' : '🧑'} After 12
         </Button>
       </ArticleFooter>
-    </>
+    </Article>
   );
 };
 

@@ -3,7 +3,7 @@ import { WelcomeWizardStep } from '../lib/welcomeWizard.const';
 import { Values } from '../types/Values';
 import { GenderType } from '../types/GenderType';
 import { AgeRangeType } from '../types/AgeRangeType';
-import IHeightWeight from '../interfaces/IHeightWeight';
+import IHeightWeight from '../interface/IHeightWeight';
 
 type StepType = Values<typeof WelcomeWizardStep>;
 

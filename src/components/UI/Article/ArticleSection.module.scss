@@ -1,14 +1,10 @@
 .root {
-  margin-top: 2rem;
   padding: 0 2rem;
   overflow-y: auto;
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  height: calc(100% - 30rem);
-
-  &[hidden] {
-    display: none;
-  }
+  height: calc(50% - 7rem);
 
   &::-webkit-scrollbar {
     position: absolute;

@@ -1,17 +1,15 @@
-import Container from '@mui/material/Container';
 import React from 'react';
 import WelcomeWizard from './components/WelcomeWizard/WelcomeWizard';
+import Header from './components/UI/Layout/Header/Header';
 
 function App() {
   return (
-    <div>
-      <header>The header</header>
+    <>
+      <Header />
       <main>
-        <Container maxWidth={'sm'}>
-          <WelcomeWizard />
-        </Container>
+        <WelcomeWizard />
       </main>
-    </div>
+    </>
   );
 }
 
