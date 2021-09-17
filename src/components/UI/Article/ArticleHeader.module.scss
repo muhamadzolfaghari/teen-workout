@@ -6,5 +6,11 @@ $primary-dark: #c77800;
   width: 100%;
   height: 50%;
   padding: 1rem;
-  background-color: $primary-main;
+  overflow: hidden;
+
+  img {
+    margin: -1rem;
+    border-radius: 0 0 50% 0;
+    width: calc(100% + 2rem);
+  }
 }

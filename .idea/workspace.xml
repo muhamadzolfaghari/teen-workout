@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df52df07-f3e9-4be4-94e7-0df6cf6b1777" name="Changes" comment="SetHeightWeight.tsx updated and first test succeed.">
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Layout/Header/Header.tsx" afterDir="false" />
+    <list default="true" id="df52df07-f3e9-4be4-94e7-0df6cf6b1777" name="Changes" comment="Mobile resolution implemented.">
+      <change afterPath="$PROJECT_DIR$/src/images/pull-up-bar-exercise.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/workout-pattern.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/workout-pattern.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/ThemeModeType.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/hooks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Article/Article.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Article/Article.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Article/Article.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Article/Article.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Article/ArticleFooter.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Article/ArticleFooter.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Article/ArticleFooter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Article/ArticleFooter.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Article/ArticleHeader.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Article/ArticleHeader.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Article/ArticleSection.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Article/ArticleSection.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Layout/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Layout/Header/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Theme.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Theme.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/Description.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Description.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetHeightWeight.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetHeightWeight.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/Welcoming.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/Welcoming.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/welcomeWizardSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/welcomeWizardSlice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/welcomeWizard/useSetHeightWeight.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/welcomeWizard/useSetHeightWeight.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/IHeightWeight.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interface/IHeightWeight.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/appSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/appSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +30,9 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="TypeScript JSX File" />
         <option value="SCSS File" />
         <option value="TypeScript File" />
-        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -59,7 +60,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/images" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -74,6 +75,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Muhamad\WebstormProjects\teen-workout\src\images" />
       <recent name="C:\Users\Muhamad\WebstormProjects\teen-workout\src\lib" />
       <recent name="C:\Users\Muhamad\WebstormProjects\teen-workout\src\components\UI" />
       <recent name="C:\Users\m.zolfaghari\Desktop\teen-workout" />
@@ -120,7 +122,7 @@
       <workItem from="1631555206955" duration="7569000" />
       <workItem from="1631593160732" duration="4225000" />
       <workItem from="1631640110794" duration="20696000" />
-      <workItem from="1631808843780" duration="13056000" />
+      <workItem from="1631808843780" duration="20710000" />
     </task>
     <task id="LOCAL-00001" summary="Uploading the project files.">
       <created>1631640363088</created>
@@ -262,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631816549842</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Mobile resolution implemented.">
+      <created>1631863941363</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1631863941363</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,7 +326,9 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/components/WelcomeWizard/Steps/SetAgeRange.tsx&#10;#&#9;src/components/WelcomeWizard/Steps/SetGender.tsx" />
     <MESSAGE value="SetHeightWeight.tsx updated." />
     <MESSAGE value="SetHeightWeight.tsx updated and first test succeed." />
-    <option name="LAST_COMMIT_MESSAGE" value="SetHeightWeight.tsx updated and first test succeed." />
+    <MESSAGE value="Moi" />
+    <MESSAGE value="Mobile resolution implemented." />
+    <option name="LAST_COMMIT_MESSAGE" value="Mobile resolution implemented." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

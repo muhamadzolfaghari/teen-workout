@@ -1,27 +1,24 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { ThemeModeType } from '../types/ThemeModeType';
 
-interface CounterState {
-  value: number;
+interface IState {
+  themeMode?: ThemeModeType;
 }
 
-const initialState: CounterState = {
-  value: 10,
-};
+const initialState: IState = {};
 
-const counterSlice = createSlice({
-  name: 'counter',
+const appSlice = createSlice({
+  name: 'app',
   initialState,
   reducers: {
-    // increment
-    incremented(state) {
-      state.value++;
+    themeModeChanged(state, action: PayloadAction<ThemeModeType>) {
+      state.themeMode = action.payload;
     },
-    amountAdded(state, action: PayloadAction<number>) {
-      state.value += action.payload;
+    themeModeToggle(state) {
+      state.themeMode = state.themeMode === 'light' ? 'dark' : 'light';
     },
-    // decrement
   },
 });
 
-export const { incremented, amountAdded } = counterSlice.actions;
-export default counterSlice.reducer;
+export const { themeModeChanged, themeModeToggle } = appSlice.actions;
+export default appSlice.reducer;

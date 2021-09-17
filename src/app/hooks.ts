@@ -7,4 +7,9 @@ export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
 
 export const selectSelf = (state: RootState) => state;
 
-export const welcomeWizardSelector = createSelector(selectSelf, (state) => state.welcomeWizard);
+export const welcomeWizardSelector = createSelector(
+  selectSelf,
+  (state) => state.welcomeWizard
+);
+
+export const appSelector = createSelector(selectSelf, (state) => state.app);
