@@ -1,5 +1,5 @@
 import ArticleSection from '../../UI/Article/ArticleSection';
-import ArticleFooter from '../../UI/Article/ArticleFooter';
+import ArticleFooter from '../../UI/Article/ArticleFooter/ArticleFooter';
 import Description from '../Description';
 import {
   genderChanged,
@@ -7,9 +7,10 @@ import {
 } from '../../../features/welcomeWizardSlice';
 import { useAppDispatch } from '../../../app/hooks';
 import { GenderType } from '../../../types/GenderType';
-import ArticleHeader from '../../UI/Article/ArticleHeader';
+import ArticleHeader from '../../UI/Article/ArticleHeader/ArticleHeader';
 import Button from './Button';
 import Article from '../../UI/Article/Article';
+import Emoji from '../../UI/Emoji/Emoji';
 
 const SetGender = () => {
   const dispatch = useAppDispatch();
@@ -28,8 +29,12 @@ const SetGender = () => {
         </Description>
       </ArticleSection>
       <ArticleFooter>
-        <Button onClick={handleButtonClick('male')}>🧑 Male</Button>
-        <Button onClick={handleButtonClick('female')}>👧 Female</Button>
+        <Button onClick={handleButtonClick('male')}>
+          <Emoji name={'male'} /> Male
+        </Button>
+        <Button onClick={handleButtonClick('female')}>
+          <Emoji name={'female'} /> Female
+        </Button>
       </ArticleFooter>
     </Article>
   );

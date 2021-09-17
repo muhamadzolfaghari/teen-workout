@@ -1,13 +1,13 @@
 import MuiButton, { ButtonProps } from '@mui/material/Button';
 import classes from './Button.module.scss';
+import getClassName from '../../../lib/utilites/getClassName';
 
-const Button = ({ ...rest }: ButtonProps) => (
+const Button = ({ className, ...rest }: ButtonProps) => (
   <MuiButton
-    {...rest}
     size={'large'}
-    color={'primary'}
     variant={'contained'}
-    className={classes.root}
+    className={getClassName(classes.root, className)}
+    {...rest}
   />
 );
 

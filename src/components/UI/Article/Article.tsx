@@ -6,10 +6,14 @@ import Paper from '@mui/material/Paper';
 
 const Article = ({ children }: PropsWithChildren<any>) => {
   const theme = useTheme();
-  const isMobileDevice = useMediaQuery(theme.breakpoints.down('sm'));
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
-    <Paper className={getClassName(classes.root, isMobileDevice && classes.sm)}>
+    <Paper
+      elevation={5}
+      component={'article'}
+      className={getClassName(classes.root, isSmallScreen && classes.sm)}
+    >
       {children}
     </Paper>
   );

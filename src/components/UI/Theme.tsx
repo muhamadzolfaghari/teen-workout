@@ -31,7 +31,6 @@ const Theme = ({ children }: PropsWithChildren<any>) => {
           MuiButton: {
             styleOverrides: {
               root: {
-                color: '#444444',
                 borderRadius: 20,
               },
             },

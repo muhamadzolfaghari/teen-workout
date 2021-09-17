@@ -1,0 +1,11 @@
+$toolbar-height: 64px;
+
+.root {
+  height: 100%;
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    max-height: calc(100% - #{$toolbar-height});
+  }
+}

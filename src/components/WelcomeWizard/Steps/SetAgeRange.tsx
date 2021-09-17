@@ -1,13 +1,17 @@
 import ArticleSection from '../../UI/Article/ArticleSection';
-import ArticleFooter from '../../UI/Article/ArticleFooter';
+import ArticleFooter from '../../UI/Article/ArticleFooter/ArticleFooter';
 import Description from '../Description';
-import ArticleHeader from '../../UI/Article/ArticleHeader';
+import ArticleHeader from '../../UI/Article/ArticleHeader/ArticleHeader';
 import { useSelector } from 'react-redux';
 import { useAppDispatch, welcomeWizardSelector } from '../../../app/hooks';
 import Button from './Button';
-import { ageRangeChanged, stepIncremented } from '../../../features/welcomeWizardSlice';
+import {
+  ageRangeChanged,
+  stepIncremented,
+} from '../../../features/welcomeWizardSlice';
 import { AgeRangeType } from '../../../types/AgeRangeType';
 import Article from '../../UI/Article/Article';
+import Emoji from '../../UI/Emoji/Emoji';
 
 const SetAgeRange = () => {
   const dispatch = useAppDispatch();
@@ -32,14 +36,14 @@ const SetAgeRange = () => {
           variant={'contained'}
           onClick={handleClick('upper 12')}
         >
-          {gender === 'male' ? '👦' : '👧'} Before 12
+          <Emoji name={gender!} /> Upper 12
         </Button>
         <Button
           size={'large'}
           variant={'contained'}
           onClick={handleClick('under 12')}
         >
-          {gender === 'male' ? '👨' : '🧑'} After 12
+          <Emoji name={gender === 'male' ? 'boy' : 'girl'} /> Under 12
         </Button>
       </ArticleFooter>
     </Article>

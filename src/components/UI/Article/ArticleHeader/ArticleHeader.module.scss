@@ -5,12 +5,11 @@ $primary-dark: #c77800;
 .root {
   width: 100%;
   height: 50%;
-  padding: 1rem;
+  padding: 0 1rem;
   overflow: hidden;
+}
 
-  img {
-    margin: -1rem;
-    border-radius: 0 0 50% 0;
-    width: calc(100% + 2rem);
-  }
+.toolbar {
+  display: flex;
+  justify-content: space-between;
 }
