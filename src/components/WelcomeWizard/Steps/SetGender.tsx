@@ -11,6 +11,8 @@ import ArticleHeader from '../../UI/Article/ArticleHeader/ArticleHeader';
 import Button from './Button';
 import Article from '../../UI/Article/Article';
 import Emoji from '../../UI/Emoji/Emoji';
+import ArticleHeaderImage from '../../UI/Article/ArticleHeader/ArticleHeaderImage';
+import image from '../../../images/togther-workout.png';
 
 const SetGender = () => {
   const dispatch = useAppDispatch();
@@ -18,11 +20,13 @@ const SetGender = () => {
   const handleButtonClick = (gender: GenderType) => () => {
     dispatch(stepIncremented());
     dispatch(genderChanged(gender));
-  };
+  }
 
   return (
     <Article>
-      <ArticleHeader />
+      <ArticleHeader >
+        <ArticleHeaderImage src={image} alt="The man and woman are doing workout" />
+      </ArticleHeader>
       <ArticleSection>
         <Description>
           What is your <mark>gender</mark>?

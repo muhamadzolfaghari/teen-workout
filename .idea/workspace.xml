@@ -2,33 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df52df07-f3e9-4be4-94e7-0df6cf6b1777" name="Changes" comment="Dark mode applied.">
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Article/ArticleHeader/ArticleHeader.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Article/ArticleHeader/ArticleHeader.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Article/ArticleHeader/ArticleHeaderImage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Emoji/Emoji.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Emoji/Emoji.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/MenuDrawer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/Welcoming.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useOnlySmallScreen.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/climbing.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/emojies/boy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/emojies/female.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/emojies/girl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/emojies/male.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/standing-boys.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/standing-girls.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/togther-workout.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Article/Article.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Article/Article.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Article/ArticleFooter.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Article/ArticleFooter/ArticleFooter.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Article/ArticleFooter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Article/ArticleFooter/ArticleFooter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Article/ArticleHeader.module.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Article/ArticleHeader.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Theme.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Theme.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/Button.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetAgeRange.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetAgeRange.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetGender.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetGender.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetHeightWeight.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetHeightWeight.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/Welcoming.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Article/ArticleHeader/ArticleHeaderImage.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/Welcoming.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/Welcoming.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/welcomeWizard.const.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/welcomeWizard.const.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/welcomeWizard/useSetHeightWeight.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/welcomeWizard/useSetHeightWeight.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,11 +74,11 @@
       <recent name="C:\Users\m.zolfaghari\Desktop\teen-workout" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Muhamad\WebstormProjects\teen-workout\src\images" />
       <recent name="C:\Users\Muhamad\WebstormProjects\teen-workout\src\components\UI\Article\ArticleFooter" />
       <recent name="C:\Users\Muhamad\WebstormProjects\teen-workout\src\components\UI\Article\ArticleHeader" />
       <recent name="C:\Users\Muhamad\WebstormProjects\teen-workout\src\components\UI\Emoji" />
       <recent name="C:\Users\Muhamad\WebstormProjects\teen-workout\src\components\WelcomeWizard\Steps" />
-      <recent name="C:\Users\Muhamad\WebstormProjects\teen-workout\src\lib\utilites" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -137,6 +118,7 @@
       <workItem from="1631593160732" duration="4225000" />
       <workItem from="1631640110794" duration="20696000" />
       <workItem from="1631808843780" duration="34209000" />
+      <workItem from="1631987447045" duration="5117000" />
     </task>
     <task id="LOCAL-00001" summary="Uploading the project files.">
       <created>1631640363088</created>

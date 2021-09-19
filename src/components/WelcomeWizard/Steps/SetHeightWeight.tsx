@@ -7,14 +7,29 @@ import classes from './SetHeightWeight.module.scss';
 import Button from './Button';
 import useSetHeightWeight from '../../../hooks/welcomeWizard/useSetHeightWeight';
 import Article from '../../UI/Article/Article';
+import ArticleHeaderImage from '../../UI/Article/ArticleHeader/ArticleHeaderImage';
+import standingGirlsImage from '../../../images/standing-girls.png';
+import standingBoysImage from '../../../images/standing-boys.png';
 
 const SetHeightWeight = () => {
-  const { form } = useSetHeightWeight();
+  const { form, gender } = useSetHeightWeight();
 
   return (
     <form onSubmit={form.handleSubmit} className={classes.root}>
       <Article>
-        <ArticleHeader />
+        <ArticleHeader>
+          {gender === 'female' ? (
+            <ArticleHeaderImage
+              src={standingGirlsImage}
+              alt={'The girls are standing'}
+            />
+          ) : (
+            <ArticleHeaderImage
+              src={standingBoysImage}
+              alt={'The boys are standing'}
+            />
+          )}
+        </ArticleHeader>
         <ArticleSection>
           <Description gutterBottom>
             What is your <mark>height</mark> and <mark>weight</mark>?

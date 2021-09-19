@@ -25,7 +25,8 @@ const defaultValues: Record<keyof IHeightWeight, string> = {
 const useSetHeightWeight = () => {
   const dispatch = useAppDispatch();
   const [initialValues, setInitialValues] = useState(defaultValues);
-  const { height, weight } = useSelector(welcomeWizardSelector);
+  const { height, weight, gender } = useSelector(welcomeWizardSelector);
+
   const form = useFormik({
     initialValues,
     validationSchema,
@@ -48,7 +49,7 @@ const useSetHeightWeight = () => {
     }
   }, [height, weight]);
 
-  return { form };
+  return { form, gender };
 };
 
 export default useSetHeightWeight;

@@ -12,6 +12,9 @@ import {
 import { AgeRangeType } from '../../../types/AgeRangeType';
 import Article from '../../UI/Article/Article';
 import Emoji from '../../UI/Emoji/Emoji';
+import ArticleHeaderImage from '../../UI/Article/ArticleHeader/ArticleHeaderImage';
+import standingGirlsImage from '../../../images/standing-girls.png';
+import standingBoysImage from '../../../images/standing-boys.png';
 
 const SetAgeRange = () => {
   const dispatch = useAppDispatch();
@@ -24,7 +27,19 @@ const SetAgeRange = () => {
 
   return (
     <Article>
-      <ArticleHeader />
+      <ArticleHeader>
+        {gender === 'female' ? (
+          <ArticleHeaderImage
+            src={standingGirlsImage}
+            alt={'The girls are standing'}
+          />
+        ) : (
+          <ArticleHeaderImage
+            src={standingBoysImage}
+            alt={'The boys are standing'}
+          />
+        )}
+      </ArticleHeader>
       <ArticleSection>
         <Description>
           Which one is best for describing your <mark>age range</mark>?
