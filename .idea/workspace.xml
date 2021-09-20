@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df52df07-f3e9-4be4-94e7-0df6cf6b1777" name="Changes" comment="Dark mode applied.">
-      <change afterPath="$PROJECT_DIR$/src/images/standing-boys.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/standing-girls.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/togther-workout.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetAgeRange.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetAgeRange.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetGender.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetGender.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetHeightWeight.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetHeightWeight.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/welcomeWizard/useSetHeightWeight.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/welcomeWizard/useSetHeightWeight.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/standing-boys.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/standing-boys.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +112,8 @@
       <workItem from="1631593160732" duration="4225000" />
       <workItem from="1631640110794" duration="20696000" />
       <workItem from="1631808843780" duration="34209000" />
-      <workItem from="1631987447045" duration="5117000" />
+      <workItem from="1631987447045" duration="5723000" />
+      <workItem from="1632161976755" duration="1077000" />
     </task>
     <task id="LOCAL-00001" summary="Uploading the project files.">
       <created>1631640363088</created>
@@ -274,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631876571501</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Dark mode applied.">
+      <created>1632074251895</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1632074251895</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
