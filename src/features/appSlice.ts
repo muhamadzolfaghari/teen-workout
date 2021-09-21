@@ -1,11 +1,16 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { ThemeModeType } from '../types/ThemeModeType';
+import { Values } from '../types/Values';
+import { AppMode } from '../lib/app.const';
 
 interface IState {
   themeMode?: ThemeModeType;
+  appMode: Values<typeof AppMode>;
 }
 
-const initialState: IState = {};
+const initialState: IState = {
+  appMode: AppMode.DASHBOARD
+};
 
 const appSlice = createSlice({
   name: 'app',

@@ -7,7 +7,7 @@ import Description from '../Description';
 import Button from './Button';
 import { stepIncremented } from '../../../features/welcomeWizardSlice';
 import Article from '../../UI/Article/Article';
-import image from '../../../images/climbing.png';
+import image from '../../../images/welcome-wizard/climbing.png';
 import ArticleHeaderImage from '../../UI/Article/ArticleHeader/ArticleHeaderImage';
 import ArticleFooter from '../../UI/Article/ArticleFooter/ArticleFooter';
 import classes from './Welcoming.module.scss';

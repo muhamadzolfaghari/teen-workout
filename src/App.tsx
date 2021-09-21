@@ -1,13 +1,13 @@
 import React from 'react';
-import WelcomeWizard from './components/WelcomeWizard/WelcomeWizard';
 import Header from './components/UI/Layout/Header/Header';
+import Main from './components/Main/Main';
 
 function App() {
   return (
     <>
       <Header />
       <main>
-        <WelcomeWizard />
+        <Main />
       </main>
     </>
   );

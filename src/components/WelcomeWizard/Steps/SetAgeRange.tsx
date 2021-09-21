@@ -13,8 +13,8 @@ import { AgeRangeType } from '../../../types/AgeRangeType';
 import Article from '../../UI/Article/Article';
 import Emoji from '../../UI/Emoji/Emoji';
 import ArticleHeaderImage from '../../UI/Article/ArticleHeader/ArticleHeaderImage';
-import standingGirlsImage from '../../../images/standing-girls.png';
-import standingBoysImage from '../../../images/standing-boys.png';
+import standingGirlsImage from '../../../images/welcome-wizard/standing-girls.png';
+import standingBoysImage from '../../../images/welcome-wizard/standing-boys.png';
 
 const SetAgeRange = () => {
   const dispatch = useAppDispatch();

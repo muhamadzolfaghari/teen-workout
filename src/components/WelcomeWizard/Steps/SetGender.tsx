@@ -12,7 +12,7 @@ import Button from './Button';
 import Article from '../../UI/Article/Article';
 import Emoji from '../../UI/Emoji/Emoji';
 import ArticleHeaderImage from '../../UI/Article/ArticleHeader/ArticleHeaderImage';
-import image from '../../../images/togther-workout.png';
+import image from '../../../images/welcome-wizard/togther-workout.png';
 
 const SetGender = () => {
   const dispatch = useAppDispatch();
