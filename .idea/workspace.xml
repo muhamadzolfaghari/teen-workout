@@ -2,33 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df52df07-f3e9-4be4-94e7-0df6cf6b1777" name="Changes" comment="Dark mode applied.">
-      <change afterPath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Dashboard/Navigation/Navigation.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Dashboard/Navigation/Navigation.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Dashboard/Paper.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Main/Main.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Layout/Header/Header.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/foods/food1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/foods/food2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/app.const.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Layout/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Layout/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetAgeRange.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetAgeRange.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetGender.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetGender.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetHeightWeight.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetHeightWeight.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/Welcoming.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/Welcoming.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/appSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/appSlice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/climbing.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/welcome-wizard/climbing.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/pull-up-bar-exercise.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/welcome-wizard/pull-up-bar-exercise.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/standing-boys.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/welcome-wizard/standing-boys.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/standing-girls.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/welcome-wizard/standing-girls.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/test.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/togther-workout.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/welcome-wizard/togther-workout.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/workout-pattern.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/welcome-wizard/workout-pattern.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/workout-pattern.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/welcome-wizard/workout-pattern.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Theme.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Theme.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +115,8 @@
       <workItem from="1631640110794" duration="20696000" />
       <workItem from="1631808843780" duration="34209000" />
       <workItem from="1631987447045" duration="5723000" />
-      <workItem from="1632161976755" duration="13774000" />
+      <workItem from="1632161976755" duration="14597000" />
+      <workItem from="1632254281572" duration="1237000" />
     </task>
     <task id="LOCAL-00001" summary="Uploading the project files.">
       <created>1631640363088</created>
@@ -308,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632163072543</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Dark mode applied.">
+      <created>1632252523322</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1632252523322</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

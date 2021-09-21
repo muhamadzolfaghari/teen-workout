@@ -5,30 +5,43 @@ import Grid from '@mui/material/Grid';
 import FitnessCenterOutlinedIcon from '@mui/icons-material/FitnessCenterOutlined';
 import * as React from 'react';
 import Paper from './Paper';
-import Card  from '@mui/material/Card';
-import Avatar  from '@mui/material/Avatar';
+import Card from '@mui/material/Card';
+import Avatar from '@mui/material/Avatar';
+import food1Image from '../../images/foods/food1.png';
+import food2Image from '../../images/foods/food2.png';
+import CardHeader from '@mui/material/CardHeader';
+import Container from '@mui/material/Container';
+import { CardContent } from '@mui/material';
 
-  const Dashboard = () => {
+const Dashboard = () => {
   return (
     <>
       <SimpleBottomNavigation />
-      <Grid container className={classes.grid} spacing={5}>
-        <Grid xs={5} item>
-          <Paper className={classes.paper}>
-            <Typography variant={'h4'}>Summary</Typography>
-            <Typography variant={'h1'}>
-              <FitnessCenterOutlinedIcon fontSize={'large'} /> Today Workout
-            </Typography>
-          </Paper>
+      <Container>
+        <Grid container spacing={5} className={classes.grid}>
+          <Grid xs item>
+            <Paper className={classes.paper}>
+              <Typography variant={'h4'}>Summary</Typography>
+              <Typography variant={'h4'}>
+                <FitnessCenterOutlinedIcon fontSize={'large'} /> Today Workout
+              </Typography>
+            </Paper>
+          </Grid>
+          <Grid xs item>
+            <Paper className={classes.paper}>
+              <Typography variant={'h4'}>Recommendation Foods</Typography>
+              <Card>
+                <CardContent>
+                  <Avatar src={food1Image} />
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader avatar={<Avatar src={food2Image} />} />
+              </Card>
+            </Paper>
+          </Grid>
         </Grid>
-        <Grid xs={5} item>
-          <Paper className={classes.paper}>
-            <Card>
-              <Avatar/>
-            </Card>
-          </Paper>
-        </Grid>
-      </Grid>
+      </Container>
     </>
   );
 };
