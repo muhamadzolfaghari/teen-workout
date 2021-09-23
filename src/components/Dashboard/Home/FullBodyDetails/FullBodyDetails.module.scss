@@ -1,0 +1,37 @@
+.root {
+  margin-top: 1rem;
+
+  mark {
+    color: #ffa726;
+    background: transparent;
+  }
+}
+
+.divider {
+  margin: 1rem 0;
+}
+
+.general-details {
+  display: grid;
+  row-gap: 0.5rem;
+  column-gap: 1rem;
+  grid-template-columns: 1fr 11fr;
+}
+
+.health-details {
+  margin-bottom: 1rem;
+  display: grid;
+  row-gap: 0.5rem;
+  text-align: center;
+  column-gap: 0.5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.health-item {
+  display: flex;
+  flex-direction: column;
+
+  svg {
+    margin: auto;
+  }
+}
