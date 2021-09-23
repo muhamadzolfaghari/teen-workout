@@ -7,7 +7,7 @@ import { appSelector, useAppDispatch } from '../../app/hooks';
 import { themeModeChanged } from '../../features/appSlice';
 import { ThemeModeType } from '../../types/ThemeModeType';
 
-const defaultTheme = createTheme();
+// const defaultTheme = createTheme();
 
 const cache = createCache({
   key: 'a',
