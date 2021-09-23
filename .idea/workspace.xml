@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="df52df07-f3e9-4be4-94e7-0df6cf6b1777" name="Changes" comment="Dark mode applied.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Theme.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Theme.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +115,9 @@
       <workItem from="1631987447045" duration="5723000" />
       <workItem from="1632161976755" duration="14597000" />
       <workItem from="1632254281572" duration="1237000" />
+      <workItem from="1632335120041" duration="6023000" />
+      <workItem from="1632405158212" duration="929000" />
+      <workItem from="1632411707342" duration="1443000" />
     </task>
     <task id="LOCAL-00001" summary="Uploading the project files.">
       <created>1631640363088</created>
