@@ -1,13 +1,13 @@
 import classes from './ArticleFooter.module.scss';
 import { PropsWithChildren } from 'react';
-import getClassName from '../../../../lib/utilites/getClassName';
+import clsx from 'clsx';
 
 interface IProps {
   type?: 'grid' | 'normal';
 }
 
 const ArticleFooter = ({ children, type }: PropsWithChildren<IProps>) => (
-  <footer className={getClassName(classes.root, classes[type ?? 'grid'])}>
+  <footer className={clsx(classes.root, classes[type ?? 'grid'])}>
     {children}
   </footer>
 );

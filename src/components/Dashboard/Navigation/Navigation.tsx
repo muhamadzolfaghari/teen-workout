@@ -7,12 +7,18 @@ import classes from './Navigation.module.scss';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import FitnessCenterOutlinedIcon from '@mui/icons-material/FitnessCenterOutlined';
 import FoodBankOutlinedIcon from '@mui/icons-material/FoodBankOutlined';
+import useOnlyMediumScreen from '../../../hooks/useOnlyMediumScreen';
+import clsx from 'clsx';
 
-export default function SimpleBottomNavigation() {
+export default function Navigation() {
+  const onlyMediumScreen = useOnlyMediumScreen();
   const [value, setValue] = React.useState(0);
 
   return (
-    <Paper elevation={5} className={classes.root}>
+    <Paper
+      elevation={5}
+      className={clsx(classes.root, onlyMediumScreen && classes.md)}
+    >
       <BottomNavigation
         className={classes.navigation}
         showLabels

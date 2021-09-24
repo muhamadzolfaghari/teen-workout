@@ -1,8 +1,22 @@
 .root {
   width: calc(50% - 60px);
+  min-width: 500px;
   border-radius: 0 0 20px 20px;
   margin: -4rem auto auto;
   overflow: hidden;
+
+  &.md {
+    bottom: 0;
+    border-radius: 0;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    min-width: 100%;
+
+    .navigation {
+      height: unset;
+    }
+  }
 }
 
 .navigation {

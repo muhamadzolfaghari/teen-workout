@@ -10,6 +10,7 @@ import Article from '../../UI/Article/Article';
 import ArticleHeaderImage from '../../UI/Article/ArticleHeader/ArticleHeaderImage';
 import standingGirlsImage from '../../../images/welcome-wizard/standing-girls.png';
 import standingBoysImage from '../../../images/welcome-wizard/standing-boys.png';
+import BoldText from '../../UI/BoldText';
 
 const SetHeightWeight = () => {
   const { form, gender } = useSetHeightWeight();
@@ -32,7 +33,8 @@ const SetHeightWeight = () => {
         </ArticleHeader>
         <ArticleSection>
           <Description gutterBottom>
-            What is your <mark>height</mark> and <mark>weight</mark>?
+            What is your <BoldText>height</BoldText> and{' '}
+            <BoldText>weight</BoldText>?
           </Description>
           <div className={classes.group}>
             <TextField

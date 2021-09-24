@@ -13,6 +13,7 @@ import Article from '../../UI/Article/Article';
 import Emoji from '../../UI/Emoji/Emoji';
 import ArticleHeaderImage from '../../UI/Article/ArticleHeader/ArticleHeaderImage';
 import image from '../../../images/welcome-wizard/togther-workout.png';
+import BoldText from '../../UI/BoldText';
 
 const SetGender = () => {
   const dispatch = useAppDispatch();
@@ -29,7 +30,7 @@ const SetGender = () => {
       </ArticleHeader>
       <ArticleSection>
         <Description>
-          What is your <mark>gender</mark>?
+          What is your <BoldText>gender</BoldText>?
         </Description>
       </ArticleSection>
       <ArticleFooter>

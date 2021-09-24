@@ -1,18 +1,17 @@
 import classes from './Article.module.scss';
 import { PropsWithChildren } from 'react';
-import { useMediaQuery, useTheme } from '@mui/material';
-import getClassName from '../../../lib/utilites/getClassName';
 import Paper from '@mui/material/Paper';
+import useOnlySmallScreen from '../../../hooks/useOnlySmallScreen';
+import clsx from 'clsx';
 
 const Article = ({ children }: PropsWithChildren<any>) => {
-  const theme = useTheme();
-  const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+  const onlySmallScreen = useOnlySmallScreen();
 
   return (
     <Paper
       elevation={5}
       component={'article'}
-      className={getClassName(classes.root, isSmallScreen && classes.sm)}
+      className={clsx(classes.root, onlySmallScreen && classes.sm)}
     >
       {children}
     </Paper>
