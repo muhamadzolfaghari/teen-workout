@@ -1,19 +1,20 @@
 import Typography from '@mui/material/Typography';
-import Card from '../../Card';
+import Card from '../../../UI/Dashboard/Card/Card';
 import CardHeader from '@mui/material/CardHeader';
 import Avatar from '@mui/material/Avatar';
 import food1Image from '../../../../images/foods/food1.png';
-import { CardContent } from '@mui/material';
+import CardContent  from '@mui/material/CardContent';
 import food2Image from '../../../../images/foods/food2.png';
-import Paper from '../../Paper/Paper';
+import Paper from '../../../UI/Dashboard/Paper/Paper';
 import * as React from 'react';
+import Box from '@mui/material/Box';
 
 const SuggestedFoods = () => (
   <Paper>
     <Typography variant={'h4'} gutterBottom>
       Recommendation Foods
     </Typography>
-    <Card variant={'outlined'}>
+    <Card>
       <CardHeader
         title={'Vegetarian Dish'}
         subheader={'The healthy food for have a healthy body'}
@@ -24,7 +25,8 @@ const SuggestedFoods = () => (
         that mixed up with vegetable oil.
       </CardContent>
     </Card>
-    <Card sx={{ marginTop: '1rem' }} variant={'outlined'}>
+    <Box marginTop={'1rem'} />
+    <Card>
       <CardHeader
         title={'Fish Meat'}
         subheader={'Superb meal to get protein'}

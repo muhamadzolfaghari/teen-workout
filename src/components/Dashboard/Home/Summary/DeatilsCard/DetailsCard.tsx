@@ -14,14 +14,14 @@ import Divider from '@mui/material/Divider';
 import BloodtypeOutlinedIcon from '@mui/icons-material/BloodtypeOutlined';
 import Typography from '@mui/material/Typography/Typography';
 import { Alert, useTheme } from '@mui/material';
-import Card from '../../../Card';
+import Card from '../../../../UI/Dashboard/Card/Card';
 import BoldText from '../../../../UI/BoldText';
 
 const DetailsCard = () => {
   const theme = useTheme();
 
   return (
-    <Card  className={classes.root}>
+    <Card className={classes.root}>
       <CardHeader
         title={'Full body details'}
         subheader={'See the health and information about body'}

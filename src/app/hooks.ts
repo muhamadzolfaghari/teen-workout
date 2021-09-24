@@ -13,3 +13,8 @@ export const welcomeWizardSelector = createSelector(
 );
 
 export const appSelector = createSelector(selectSelf, (state) => state.app);
+
+export const dashboardSelector = createSelector(
+  selectSelf,
+  (state) => state.dashboard
+);

@@ -1,39 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df52df07-f3e9-4be4-94e7-0df6cf6b1777" name="Changes" comment="Home Page of Dashboard completed.">
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Dashboard/Home/Home.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Dashboard/Home/SuggestedFoods/SuggestedFoods.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Dashboard/Home/Summary/Summary.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Dashboard/Home/Summary/Summary.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Dashboard/Paper/Paper.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Dashboard/Paper/Paper.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/BoldText.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useOnlyMediumScreen.ts" afterDir="false" />
+    <list default="true" id="df52df07-f3e9-4be4-94e7-0df6cf6b1777" name="Changes" comment="Home.tsx for Dashboard.tsx completed.">
+      <change afterPath="$PROJECT_DIR$/src/components/Dashboard/Workout/Workout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dashboard/Workout/WorkoutCard/WorkoutCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dashboard/Workout/WorkoutDetails/WorkoutDetails.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dashboard/Workout/WorkoutDetails/WorkoutDetails.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dashboard/Workout/workout.const.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dashboard/dashboardSlice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Dashboard/Card/Card.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Dashboard/Card/Card.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/workouts/lunges.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/workouts/mountain-climber.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/workouts/reverse-dumbbell-fly.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/workouts/squats.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/workouts/stretch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interface/IWorkout.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/dashboard.const.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/Card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/hooks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Card.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Home/FullBodyDetails/FullBodyDetails.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/Home/Summary/DeatilsCard/DetailsCard.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Home/FullBodyDetails/FullBodyDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/Home/Summary/DeatilsCard/DetailsCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Home/Home.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Navigation/Navigation.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/Navigation/Navigation.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Navigation/Navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/Navigation/Navigation.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Paper.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Article/Article.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Article/Article.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Article/ArticleFooter/ArticleFooter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Article/ArticleFooter/ArticleFooter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Emoji/Emoji.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Emoji/Emoji.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Layout/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Layout/Header/Header.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Layout/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Layout/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/Description.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Description.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/Button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetAgeRange.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetAgeRange.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetGender.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetGender.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetHeightWeight.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/SetHeightWeight.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/utilites/getClassName.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Home/SuggestedFoods/SuggestedFoods.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/Home/SuggestedFoods/SuggestedFoods.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Home/Summary/DeatilsCard/DetailsCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/Home/Summary/DeatilsCard/DetailsCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Home/Summary/Summary.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/Home/Summary/Summary.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Home/Summary/Summary.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/Home/Summary/Summary.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Navigation/Navigation.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Dashboard/Navigation/Navigation.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Navigation/Navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Dashboard/Navigation/Navigation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Paper/Paper.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Dashboard/Paper/Paper.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Paper/Paper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Dashboard/Paper/Paper.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/welcome-wizard/pull-up-bar-exercise.JPG" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +42,8 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="TypeScript JSX File" />
         <option value="tsconfig.json" />
+        <option value="TypeScript JSX File" />
         <option value="SCSS File" />
         <option value="TypeScript File" />
       </list>
@@ -77,7 +74,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/hooks" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/images/workouts" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -92,18 +89,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Muhamad\WebstormProjects\teen-workout\src\images\workouts" />
       <recent name="C:\Users\Muhamad\WebstormProjects\teen-workout\src\hooks" />
       <recent name="C:\Users\Muhamad\WebstormProjects\teen-workout\src\components\Dashboard" />
       <recent name="C:\Users\Muhamad\WebstormProjects\teen-workout\src\images" />
       <recent name="C:\Users\Muhamad\WebstormProjects\teen-workout\src\lib" />
-      <recent name="C:\Users\Muhamad\WebstormProjects\teen-workout\src\components\UI" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Muhamad\WebstormProjects\teen-workout\src\components\Dashboard\Workout\WorkoutCard" />
+      <recent name="C:\Users\Muhamad\WebstormProjects\teen-workout\src\images\workouts" />
+      <recent name="C:\Users\Muhamad\WebstormProjects\teen-workout\src\components\UI\Dashboard" />
+      <recent name="C:\Users\Muhamad\WebstormProjects\teen-workout\src\components\Dashboard\Card" />
       <recent name="C:\Users\Muhamad\WebstormProjects\teen-workout\src\components\Dashboard\Paper" />
-      <recent name="C:\Users\Muhamad\WebstormProjects\teen-workout\src\components\Dashboard\Home\Summary" />
-      <recent name="C:\Users\Muhamad\WebstormProjects\teen-workout\src\components\Dashboard\Home\FullBodyDetails" />
-      <recent name="C:\Users\Muhamad\WebstormProjects\teen-workout\src\components\Dashboard" />
-      <recent name="C:\Users\Muhamad\WebstormProjects\teen-workout\src\images\welcome-wizard" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -148,7 +145,7 @@
       <workItem from="1632254281572" duration="1237000" />
       <workItem from="1632335120041" duration="6023000" />
       <workItem from="1632405158212" duration="929000" />
-      <workItem from="1632411707342" duration="18602000" />
+      <workItem from="1632411707342" duration="35331000" />
     </task>
     <task id="LOCAL-00001" summary="Uploading the project files.">
       <created>1631640363088</created>
@@ -346,7 +343,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632421620476</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Home.tsx for Dashboard.tsx completed.">
+      <created>1632474994179</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1632474994179</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,7 +411,8 @@
     <MESSAGE value="Dark mode applied." />
     <MESSAGE value="unused var removed from Theme.tsx" />
     <MESSAGE value="Home Page of Dashboard completed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Home Page of Dashboard completed." />
+    <MESSAGE value="Home.tsx for Dashboard.tsx completed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Home.tsx for Dashboard.tsx completed." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
