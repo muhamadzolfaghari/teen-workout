@@ -9,7 +9,7 @@ interface IState {
 }
 
 const initialState: IState = {
-  appMode: AppMode.DASHBOARD
+  appMode: AppMode.DASHBOARD,
 };
 
 const appSlice = createSlice({
