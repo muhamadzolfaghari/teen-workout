@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df52df07-f3e9-4be4-94e7-0df6cf6b1777" name="Changes" comment="Just for check!">
+    <list default="true" id="df52df07-f3e9-4be4-94e7-0df6cf6b1777" name="Changes" comment="Workout.tsx was updated.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Workout/Workout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/Workout/Workout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/appSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/appSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Workout/WorkoutCard/WorkoutCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/Workout/WorkoutCard/WorkoutCard.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +125,7 @@
       <workItem from="1632405158212" duration="929000" />
       <workItem from="1632411707342" duration="35331000" />
       <workItem from="1632493023749" duration="662000" />
-      <workItem from="1632590174282" duration="1227000" />
+      <workItem from="1632590174282" duration="2618000" />
     </task>
     <task id="LOCAL-00001" summary="Uploading the project files.">
       <created>1631640363088</created>
@@ -338,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632493290244</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Workout.tsx was updated.">
+      <created>1632593130202</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1632593130202</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -401,7 +407,8 @@
     <MESSAGE value="Home Page of Dashboard completed." />
     <MESSAGE value="Home.tsx for Dashboard.tsx completed." />
     <MESSAGE value="Just for check!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Just for check!" />
+    <MESSAGE value="Workout.tsx was updated." />
+    <option name="LAST_COMMIT_MESSAGE" value="Workout.tsx was updated." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
