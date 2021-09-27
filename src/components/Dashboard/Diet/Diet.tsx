@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState } from 'react';
 import WorkoutDetails from './WorkoutDetails/WorkoutDetails';
-import { WORKOUTS } from '../../../lib/dashboard/workout.const';
+import { WORKOUTS } from './workout.const';
 import Typography from '@mui/material/Typography';
 import Paper from '../../UI/Dashboard/Paper/Paper';
 import WorkoutCard from './WorkoutCard/WorkoutCard';
@@ -10,7 +10,7 @@ import Card from '../../UI/Dashboard/Card/Card';
 import { Button, Dialog, DialogActions, DialogContent } from '@mui/material';
 import BoldText from '../../UI/BoldText';
 
-const Workout = () => {
+const Diet = () => {
   const [workout, setWorkout] = useState(WORKOUTS[0]);
   const [dialogOpen, setDialogOpen] = useState(false);
 
@@ -27,7 +27,7 @@ const Workout = () => {
     <>
       <Paper>
         <Typography variant={'h4'} gutterBottom>
-          Workouts
+          Diet
         </Typography>
         <Typography variant={'subtitle1'} gutterBottom>
           <BoldText>11 Minutes - {WORKOUTS.length} workouts</BoldText>
@@ -54,4 +54,4 @@ const Workout = () => {
   );
 };
 
-export default Workout;
+export default Diet;

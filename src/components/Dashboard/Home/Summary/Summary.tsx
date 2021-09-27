@@ -9,7 +9,7 @@ import Paper from '../../../UI/Dashboard/Paper/Paper';
 import useOnlySmallScreen from '../../../../hooks/useOnlySmallScreen';
 import { useAppDispatch } from '../../../../app/hooks';
 import { dashboardModeChanged } from '../../dashboardSlice';
-import { DashboardMode } from '../../../../lib/dashboard.const';
+import { DashboardMode } from '../../../../lib/dashboard/dashboard.const';
 
 const Summary = () => {
   const dispatch = useAppDispatch();

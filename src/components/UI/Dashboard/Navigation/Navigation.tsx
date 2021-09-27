@@ -12,7 +12,7 @@ import clsx from 'clsx';
 import { dashboardSelector, useAppDispatch } from '../../../../app/hooks';
 import { useSelector } from 'react-redux';
 import { Values } from '../../../../types/Values';
-import { DashboardMode } from '../../../../lib/dashboard.const';
+import { DashboardMode } from '../../../../lib/dashboard/dashboard.const';
 import { dashboardModeChanged } from '../../../Dashboard/dashboardSlice';
 
 export default function Navigation() {
@@ -37,7 +37,7 @@ export default function Navigation() {
       >
         <BottomNavigationAction label="Home" icon={<HomeOutlinedIcon />} />
         <BottomNavigationAction
-          label="Workout"
+          label="Diet"
           icon={<FitnessCenterOutlinedIcon />}
         />
         <BottomNavigationAction label="Food" icon={<FoodBankOutlinedIcon />} />

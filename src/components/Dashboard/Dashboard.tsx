@@ -7,7 +7,7 @@ import classes from './Dashboard.module.scss';
 import useOnlyMediumScreen from '../../hooks/useOnlyMediumScreen';
 import { useSelector } from 'react-redux';
 import { dashboardSelector } from '../../app/hooks';
-import { DashboardMode } from '../../lib/dashboard.const';
+import { DashboardMode } from '../../lib/dashboard/dashboard.const';
 import Workout from './Workout/Workout';
 
 const Dashboard = () => {

@@ -1,6 +1,5 @@
 import AppBar from '@mui/material/AppBar';
 import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
 import Typography from '@mui/material/Typography';
 import classes from './Header.module.scss';
 import Toolbar from '@mui/material/Toolbar';
@@ -14,7 +13,7 @@ import { Avatar } from '@mui/material';
 import { deepPurple } from '@mui/material/colors';
 import clsx from 'clsx';
 import useOnlyMediumScreen from '../../../../hooks/useOnlyMediumScreen';
-import logoImage from '../../../../images/logo192.png';
+import logoImage from '../../../../images/logo/logo192.png';
 
 const Header = () => {
   const dispatch = useAppDispatch();
@@ -31,21 +30,7 @@ const Header = () => {
       className={clsx(classes.root, onlyMediumScreen && classes['sm'])}
     >
       <Toolbar className={classes.toolbar}>
-        {onlyMediumScreen && (
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
-        )}
-        {!onlyMediumScreen && (
-          <img src={logoImage} alt={'Website logo'} className={classes.logo} />
-        )}
-
+        <img src={logoImage} alt={'Website logo'} className={classes.logo} />
         <Box
           sx={{
             display: 'flex',

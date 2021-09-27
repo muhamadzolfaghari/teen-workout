@@ -1,9 +1,9 @@
 import IWorkout from '../../../interface/IWorkout';
-import reverseDumbbellFlyImage from '../../../images/workouts/reverse-dumbbell-fly.png';
-import stretchImage from '../../../images/workouts/stretch.png';
-import squatsImage from '../../../images/workouts/squats.png';
-import lungesImage from '../../../images/workouts/lunges.png';
-import mountainClimberImage from '../../../images/workouts/mountain-climber.jpg';
+import reverseDumbbellFlyImage from '../../../images/dashboard/workouts/reverse-dumbbell-fly.png';
+import stretchImage from '../../../images/dashboard/workouts/stretch.png';
+import squatsImage from '../../../images/dashboard/workouts/squats.png';
+import lungesImage from '../../../images/dashboard/workouts/lunges.png';
+import mountainClimberImage from '../../../images/dashboard/workouts/mountain-climber.jpg';
 
 export const WORKOUTS: IWorkout[] = [
   {
