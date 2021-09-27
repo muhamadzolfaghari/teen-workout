@@ -1,6 +1,6 @@
 {
   "short_name": "Teen Workout",
-  "name": "Create React App Sample",
+  "name": "Keep in shape and get taller!",
   "icons": [
     {
       "src": "favicon.ico",
@@ -21,5 +21,5 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#ffa726",
-  "background_color": "#777777"
+  "background_color": "#ffa726"
 }
