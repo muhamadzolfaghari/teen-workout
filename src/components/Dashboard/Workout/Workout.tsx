@@ -1,7 +1,5 @@
-import Grid from '@mui/material/Grid';
 import * as React from 'react';
 import { useState } from 'react';
-import useOnlyMediumScreen from '../../../hooks/useOnlyMediumScreen';
 import WorkoutDetails from './WorkoutDetails/WorkoutDetails';
 import { WORKOUTS } from './workout.const';
 import Typography from '@mui/material/Typography';
@@ -13,7 +11,6 @@ import { Button, Dialog, DialogActions, DialogContent } from '@mui/material';
 import BoldText from '../../UI/BoldText';
 
 const Workout = () => {
-  const onlyMediumScreen = useOnlyMediumScreen();
   const [workout, setWorkout] = useState(WORKOUTS[0]);
   const [dialogOpen, setDialogOpen] = useState(false);
 
@@ -28,35 +25,23 @@ const Workout = () => {
 
   return (
     <>
-      <Grid container spacing={onlyMediumScreen ? 2 : 5}>
-        <Grid md item xs={12}>
-          <Paper>
-            <Typography variant={'h4'} gutterBottom>
-              Workouts
-            </Typography>
-            <Typography variant={'subtitle1'} gutterBottom>
-              <BoldText>11 Minutes - {WORKOUTS.length} workouts</BoldText>
-            </Typography>
-            <Card>
-              {WORKOUTS.map((workout) => (
-                <WorkoutCard
-                  item={workout}
-                  key={workout.id}
-                  onClick={handleWorkoutClick(workout)}
-                />
-              ))}
-            </Card>
-          </Paper>
-        </Grid>
-        {/*{!onlySmallScreen && (*/}
-        {/*  <Grid md item>*/}
-        {/*    <Paper>*/}
-        {/*      <WorkoutDetails {...workout} />*/}
-        {/*    </Paper>*/}
-        {/*  </Grid>*/}
-        {/*)}*/}
-      </Grid>
-
+      <Paper>
+        <Typography variant={'h4'} gutterBottom>
+          Workouts
+        </Typography>
+        <Typography variant={'subtitle1'} gutterBottom>
+          <BoldText>11 Minutes - {WORKOUTS.length} workouts</BoldText>
+        </Typography>
+        <Card>
+          {WORKOUTS.map((workout) => (
+            <WorkoutCard
+              item={workout}
+              key={workout.id}
+              onClick={handleWorkoutClick(workout)}
+            />
+          ))}
+        </Card>
+      </Paper>
       <Dialog open={dialogOpen}>
         <DialogContent>
           <WorkoutDetails {...workout} />

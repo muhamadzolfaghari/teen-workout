@@ -14,7 +14,7 @@ import { Avatar } from '@mui/material';
 import { deepPurple } from '@mui/material/colors';
 import clsx from 'clsx';
 import useOnlyMediumScreen from '../../../../hooks/useOnlyMediumScreen';
-import logoImage from '../../../../images/logo.svg';
+import logoImage from '../../../../images/logo192.png';
 
 const Header = () => {
   const dispatch = useAppDispatch();
