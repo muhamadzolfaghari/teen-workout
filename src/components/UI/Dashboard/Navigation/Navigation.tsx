@@ -37,7 +37,7 @@ export default function Navigation() {
       >
         <BottomNavigationAction label="Home" icon={<HomeOutlinedIcon />} />
         <BottomNavigationAction
-          label="Diet"
+          label="Workout"
           icon={<FitnessCenterOutlinedIcon />}
         />
         <BottomNavigationAction label="Food" icon={<FoodBankOutlinedIcon />} />
