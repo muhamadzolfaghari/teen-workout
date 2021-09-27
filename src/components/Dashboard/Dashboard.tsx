@@ -5,14 +5,12 @@ import Container from '@mui/material/Container';
 import clsx from 'clsx';
 import classes from './Dashboard.module.scss';
 import useOnlyMediumScreen from '../../hooks/useOnlyMediumScreen';
-import useOnlySmallScreen from '../../hooks/useOnlySmallScreen';
 import { useSelector } from 'react-redux';
 import { dashboardSelector } from '../../app/hooks';
 import { DashboardMode } from '../../lib/dashboard.const';
 import Workout from './Workout/Workout';
 
 const Dashboard = () => {
-  const onlySmallScreen = useOnlySmallScreen();
   const onlyMediumScreen = useOnlyMediumScreen();
   const { activeMode } = useSelector(dashboardSelector);
 
@@ -33,8 +31,8 @@ const Dashboard = () => {
       <Container
         className={clsx(
           classes.container,
-          onlyMediumScreen && classes.md,
-          onlySmallScreen && classes.sm
+          onlyMediumScreen && classes.md
+          // onlySmallScreen && classes.sm
         )}
       >
         <ActiveContent />

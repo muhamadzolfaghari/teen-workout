@@ -14,6 +14,7 @@ import { Avatar } from '@mui/material';
 import { deepPurple } from '@mui/material/colors';
 import clsx from 'clsx';
 import useOnlyMediumScreen from '../../../../hooks/useOnlyMediumScreen';
+import logoImage from '../../../../images/logo.svg';
 
 const Header = () => {
   const dispatch = useAppDispatch();
@@ -30,20 +31,31 @@ const Header = () => {
       className={clsx(classes.root, onlyMediumScreen && classes['sm'])}
     >
       <Toolbar className={classes.toolbar}>
-        <IconButton
-          size="large"
-          edge="start"
-          color="inherit"
-          aria-label="menu"
-          sx={{ mr: 2 }}
+        {onlyMediumScreen && (
+          <IconButton
+            size="large"
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            sx={{ mr: 2 }}
+          >
+            <MenuIcon />
+          </IconButton>
+        )}
+        {!onlyMediumScreen && (
+          <img src={logoImage} alt={'Website logo'} className={classes.logo} />
+        )}
+
+        <Box
+          sx={{
+            display: 'flex',
+            alignItems: 'center',
+            textTransform: 'uppercase',
+          }}
         >
-          <MenuIcon />
-        </IconButton>
-        <Box sx={{ display: 'flex', alignItems: 'center' }}>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
             Teen Workout
           </Typography>
-          <code>v1.0.0</code>
         </Box>
         <IconButton sx={{ marginLeft: 'auto' }} onClick={handleThemeMode}>
           {themeMode === 'dark' ? (
