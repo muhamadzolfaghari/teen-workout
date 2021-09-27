@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df52df07-f3e9-4be4-94e7-0df6cf6b1777" name="Changes" comment="The Header.tsx was updated." />
+    <list default="true" id="df52df07-f3e9-4be4-94e7-0df6cf6b1777" name="Changes" comment="The Navigation.tsx was updated and Uncorrected label of diet was changed into workout.">
+      <change afterPath="$PROJECT_DIR$/src/images/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.module.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -123,7 +128,7 @@
       <workItem from="1632411707342" duration="35331000" />
       <workItem from="1632493023749" duration="662000" />
       <workItem from="1632590174282" duration="2633000" />
-      <workItem from="1632719967518" duration="10917000" />
+      <workItem from="1632719967518" duration="16158000" />
     </task>
     <task id="LOCAL-00001" summary="Uploading the project files.">
       <created>1631640363088</created>
@@ -377,7 +382,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632732784545</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="The Navigation.tsx was updated and Uncorrected label of diet was changed into workout.">
+      <created>1632733377064</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1632733377064</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -444,7 +456,8 @@
     <MESSAGE value="The logo and favicon.ico added to project." />
     <MESSAGE value="The manifest.json was updated." />
     <MESSAGE value="The Header.tsx was updated." />
-    <option name="LAST_COMMIT_MESSAGE" value="The Header.tsx was updated." />
+    <MESSAGE value="The Navigation.tsx was updated and Uncorrected label of diet was changed into workout." />
+    <option name="LAST_COMMIT_MESSAGE" value="The Navigation.tsx was updated and Uncorrected label of diet was changed into workout." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

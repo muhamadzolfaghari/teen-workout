@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:export-ydpi="121.92"
+   inkscape:export-xdpi="121.92"
+   inkscape:export-filename="C:\Users\Muhamad\WebstormProjects\teen-workout\public\logo512.png"
+   sodipodi:docname="logo.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 40.000001 39.999999"
+   height="40mm"
+   width="40mm">
+  <defs
+     id="defs2">
+    <linearGradient
+       osb:paint="solid"
+       id="linearGradient3108">
+      <stop
+         id="stop3106"
+         offset="0"
+         style="stop-color:#000000;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       osb:paint="solid"
+       id="linearGradient2973">
+      <stop
+         id="stop2971"
+         offset="0"
+         style="stop-color:#ff2500;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       osb:paint="solid"
+       id="linearGradient2965">
+      <stop
+         id="stop2963"
+         offset="0"
+         style="stop-color:#ffad00;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       osb:paint="solid"
+       id="linearGradient1927">
+      <stop
+         id="stop1925"
+         offset="0"
+         style="stop-color:#ffad00;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       osb:paint="solid"
+       id="linearGradient1895">
+      <stop
+         id="stop1893"
+         offset="0"
+         style="stop-color:#ff8560;stop-opacity:1;" />
+    </linearGradient>
+    <pattern
+       id="EMFhbasepattern"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-maximized="1"
+     inkscape:window-y="-9"
+     inkscape:window-x="-9"
+     inkscape:window-height="1001"
+     inkscape:window-width="1920"
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="36.473019"
+     inkscape:cx="114.69958"
+     inkscape:zoom="1.6823711"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-65.528626,-89.331459)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <path
+       sodipodi:nodetypes="ccccc"
+       d="m 86.364572,95.307647 -2.88092,8.006793 h 19.343158 l 2.67513,-8.006793 z"
+       style="fill:#ffc300;fill-opacity:1;stroke:none;stroke-width:0.477599;stroke-dashoffset:37.7953"
+       id="rect37-6" />
+    <path
+       id="rect37"
+       style="fill:#ff2500;fill-opacity:1;stroke:none;stroke-width:0.477599;stroke-dashoffset:37.7953"
+       d="m 68.466909,100.33876 -2.88092,8.00679 h 19.343147 l 2.67514,-8.00679 z"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       id="rect37-5-2"
+       style="fill:#ffc300;fill-opacity:1;stroke:none;stroke-width:0.6281;stroke-dashoffset:37.7953"
+       d="m 78.564816,119.80095 7.334183,0.11097 8.257548,-24.309462 -8.321142,-0.294811 z"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       d="m 72.012546,125.06642 7.334183,0.11098 8.257547,-24.83864 -8.321141,0.23435 z"
+       style="fill:#ff2500;fill-opacity:1;stroke:none;stroke-width:0.6281;stroke-dashoffset:37.7953"
+       id="rect37-5" />
+  </g>
+</svg>
