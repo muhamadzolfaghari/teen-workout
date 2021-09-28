@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df52df07-f3e9-4be4-94e7-0df6cf6b1777" name="Changes" comment="The environment implemented.">
-      <change afterPath="$PROJECT_DIR$/.env.development" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="df52df07-f3e9-4be4-94e7-0df6cf6b1777" name="Changes" comment="The environment was updated.">
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -129,7 +126,7 @@
       <workItem from="1632493023749" duration="662000" />
       <workItem from="1632590174282" duration="2633000" />
       <workItem from="1632719967518" duration="16158000" />
-      <workItem from="1632803601846" duration="2332000" />
+      <workItem from="1632803601846" duration="2640000" />
     </task>
     <task id="LOCAL-00001" summary="Uploading the project files.">
       <created>1631640363088</created>
@@ -397,7 +394,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632804497719</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="The environment was updated.">
+      <created>1632806258705</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1632806258705</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,7 +470,8 @@
     <MESSAGE value="The Header.tsx was updated." />
     <MESSAGE value="The Navigation.tsx was updated and Uncorrected label of diet was changed into workout." />
     <MESSAGE value="The environment implemented." />
-    <option name="LAST_COMMIT_MESSAGE" value="The environment implemented." />
+    <MESSAGE value="The environment was updated." />
+    <option name="LAST_COMMIT_MESSAGE" value="The environment was updated." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
