@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df52df07-f3e9-4be4-94e7-0df6cf6b1777" name="Changes" comment="The Navigation.tsx was updated and Uncorrected label of diet was changed into workout.">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="df52df07-f3e9-4be4-94e7-0df6cf6b1777" name="Changes" comment="The environment implemented.">
+      <change afterPath="$PROJECT_DIR$/.env.development" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +54,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/interface" />
+    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Roaming/npm/node_modules/prettier" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -63,8 +62,8 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\Muhamad\AppData\Roaming\npm\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\m.zolfaghari\AppData\Roaming\npm\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="ts.external.directory.path" value="C:\Users\m.zolfaghari\Desktop\teen-workout\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -130,7 +129,7 @@
       <workItem from="1632493023749" duration="662000" />
       <workItem from="1632590174282" duration="2633000" />
       <workItem from="1632719967518" duration="16158000" />
-      <workItem from="1632803601846" duration="674000" />
+      <workItem from="1632803601846" duration="2332000" />
     </task>
     <task id="LOCAL-00001" summary="Uploading the project files.">
       <created>1631640363088</created>
@@ -391,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632733377064</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="The environment implemented.">
+      <created>1632804497719</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1632804497719</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,7 +465,8 @@
     <MESSAGE value="The manifest.json was updated." />
     <MESSAGE value="The Header.tsx was updated." />
     <MESSAGE value="The Navigation.tsx was updated and Uncorrected label of diet was changed into workout." />
-    <option name="LAST_COMMIT_MESSAGE" value="The Navigation.tsx was updated and Uncorrected label of diet was changed into workout." />
+    <MESSAGE value="The environment implemented." />
+    <option name="LAST_COMMIT_MESSAGE" value="The environment implemented." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

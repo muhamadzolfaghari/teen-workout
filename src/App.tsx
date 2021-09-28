@@ -3,12 +3,9 @@ import Header from './components/UI/Layout/Header/Header';
 import Main from './components/Main/Main';
 
 function App() {
-  console.log(process.env);
-
-
   return (
     <>
-      <h1>{process.env.REACT_APP_DOMAIN}</h1>
+      <h1>{process.env.REACT_APP_REDIRECT_URI}</h1>
       <Header />
       <main>
         <Main />
