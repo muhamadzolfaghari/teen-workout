@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df52df07-f3e9-4be4-94e7-0df6cf6b1777" name="Changes" comment="The Navigation.tsx was updated and Uncorrected label of diet was changed into workout.">
-      <change afterPath="$PROJECT_DIR$/src/images/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,13 +59,13 @@
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
-    <property name="node.js.selected.package.eslint" value="C:\Users\Muhamad\WebstormProjects\teen-workout\node_modules\eslint" />
+    <property name="node.js.selected.package.eslint" value="C:\Users\m.zolfaghari\Desktop\teen-workout\node_modules\eslint" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\Muhamad\AppData\Roaming\npm\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="ts.external.directory.path" value="C:\Users\Muhamad\WebstormProjects\teen-workout\node_modules\typescript\lib" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
+    <property name="ts.external.directory.path" value="C:\Users\m.zolfaghari\Desktop\teen-workout\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -129,6 +130,7 @@
       <workItem from="1632493023749" duration="662000" />
       <workItem from="1632590174282" duration="2633000" />
       <workItem from="1632719967518" duration="16158000" />
+      <workItem from="1632803601846" duration="674000" />
     </task>
     <task id="LOCAL-00001" summary="Uploading the project files.">
       <created>1631640363088</created>
