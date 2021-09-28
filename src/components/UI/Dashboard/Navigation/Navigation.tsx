@@ -11,7 +11,7 @@ import useOnlyMediumScreen from '../../../../hooks/useOnlyMediumScreen';
 import clsx from 'clsx';
 import { dashboardSelector, useAppDispatch } from '../../../../app/hooks';
 import { useSelector } from 'react-redux';
-import { Values } from '../../../../types/Values';
+import { ValuesType } from '../../../../types/ValuesType';
 import { DashboardMode } from '../../../../lib/dashboard/dashboard.const';
 import { dashboardModeChanged } from '../../../Dashboard/dashboardSlice';
 
@@ -20,7 +20,7 @@ export default function Navigation() {
   const onlyMediumScreen = useOnlyMediumScreen();
   const { activeMode } = useSelector(dashboardSelector);
 
-  const handleChange = (event: any, mode: Values<typeof DashboardMode>)=> {
+  const handleChange = (event: any, mode: ValuesType<typeof DashboardMode>)=> {
     dispatch(dashboardModeChanged(mode));
   };
 

@@ -1,11 +1,11 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { WelcomeWizardStep } from '../lib/welcomeWizard.const';
-import { Values } from '../types/Values';
+import { ValuesType } from '../types/ValuesType';
 import { GenderType } from '../types/GenderType';
 import { AgeRangeType } from '../types/AgeRangeType';
 import IHeightWeight from '../interface/IHeightWeight';
 
-type StepType = Values<typeof WelcomeWizardStep>;
+type StepType = ValuesType<typeof WelcomeWizardStep>;
 
 interface IState {
   height: number;

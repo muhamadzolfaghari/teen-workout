@@ -49,9 +49,11 @@ const Header = () => {
             <DarkModeOutlinedIcon />
           )}
         </IconButton>
-        <IconButton>
-          <Avatar sx={{ bgcolor: deepPurple[500] }}>OP</Avatar>
-        </IconButton>
+        {
+          <IconButton>
+            <Avatar sx={{ bgcolor: deepPurple[500] }}>OP</Avatar>
+          </IconButton>
+        }
       </Toolbar>
     </AppBar>
   );

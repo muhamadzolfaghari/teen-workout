@@ -11,13 +11,10 @@ import image from '../../../images/welcome-wizard/climbing.png';
 import ArticleHeaderImage from '../../UI/Article/ArticleHeader/ArticleHeaderImage';
 import ArticleFooter from '../../UI/Article/ArticleFooter/ArticleFooter';
 import classes from './Welcoming.module.scss';
+import useWelcoming from '../../../hooks/welcomeWizard/useWelcoming';
 
 const Welcoming = () => {
-  const dispatch = useAppDispatch();
-
-  const handleButtonClick = () => {
-    dispatch(stepIncremented());
-  };
+  const { handleClick } = useWelcoming();
 
   return (
     <Article>
@@ -25,7 +22,7 @@ const Welcoming = () => {
         <ArticleHeaderImage src={image} alt="The man is doing climbing" />
       </ArticleHeader>
       <ArticleSection>
-        <Typography variant={'h2'} gutterBottom>
+        <Typography variant={'h3'} gutterBottom>
           Teen Workout
         </Typography>
         <Description gutterBottom>
@@ -36,8 +33,8 @@ const Welcoming = () => {
         <Button
           fullWidth
           variant={'outlined'}
+          onClick={handleClick}
           className={classes.button}
-          onClick={handleButtonClick}
         >
           <GoogleIcon />
           <Typography component={'span'}>Continue With Google</Typography>

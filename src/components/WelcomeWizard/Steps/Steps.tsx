@@ -1,4 +1,4 @@
-import { Values } from '../../../types/Values';
+import { ValuesType } from '../../../types/ValuesType';
 import { WelcomeWizardStep } from '../../../lib/welcomeWizard.const';
 import Welcoming from './Welcoming';
 import SetGender from './SetGender';
@@ -6,7 +6,7 @@ import SetAgeRange from './SetAgeRange';
 import SetHeightWeight from './SetHeightWeight';
 
 interface IProps {
-  step: Values<typeof WelcomeWizardStep>;
+  step: ValuesType<typeof WelcomeWizardStep>;
 }
 
 const Steps = ({ step }: IProps) => {

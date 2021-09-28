@@ -9,6 +9,7 @@ const BoldText = (props: TypographyProps) => {
   return (
     <Typography
       {...props}
+      fontSize={'inherit'}
       fontWeight={600}
       component={'span'}
       color={theme.palette.primary.main}
