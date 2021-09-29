@@ -6,6 +6,7 @@ function App() {
   return (
     <>
       <Header />
+        This is the first updated
       <main>
         <Main />
       </main>
