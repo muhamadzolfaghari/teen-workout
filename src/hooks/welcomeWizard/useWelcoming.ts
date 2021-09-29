@@ -29,12 +29,13 @@ const useWelcoming = () => {
   useEffect(() => {
     console.log(data);
     if (data) {
-      dispatch(stepIncremented());
     }
   }, [data, dispatch])
 
   const handleClick = () => {
-    oauth2SignIn();
+    // oauth2SignIn();
+    dispatch(stepIncremented());
+
   };
 
   return {

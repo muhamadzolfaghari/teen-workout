@@ -21,7 +21,6 @@ const initialState: IState = {
   appMode: AppMode.WELCOME_WIZARD
 };
 
-
 const appSlice = createSlice({
   name: 'app',
   initialState,

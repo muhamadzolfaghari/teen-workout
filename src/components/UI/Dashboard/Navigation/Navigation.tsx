@@ -20,7 +20,7 @@ export default function Navigation() {
   const onlyMediumScreen = useOnlyMediumScreen();
   const { activeMode } = useSelector(dashboardSelector);
 
-  const handleChange = (event: any, mode: ValuesType<typeof DashboardMode>)=> {
+  const handleChange = (event: any, mode: ValuesType<typeof DashboardMode>) => {
     dispatch(dashboardModeChanged(mode));
   };
 
@@ -35,14 +35,14 @@ export default function Navigation() {
         value={activeMode}
         onChange={handleChange}
       >
-        <BottomNavigationAction label="Home" icon={<HomeOutlinedIcon />} />
+        <BottomNavigationAction label='Home' icon={<HomeOutlinedIcon />} />
         <BottomNavigationAction
-          label="Workout"
+          label='Workout'
           icon={<FitnessCenterOutlinedIcon />}
         />
-        <BottomNavigationAction label="Food" icon={<FoodBankOutlinedIcon />} />
+        <BottomNavigationAction label='Diet' icon={<FoodBankOutlinedIcon />} />
         <BottomNavigationAction
-          label="Settings"
+          label='Settings'
           icon={<SettingsOutlinedIcon />}
         />
       </BottomNavigation>
