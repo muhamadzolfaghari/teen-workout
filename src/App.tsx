@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Header />
-        This is the first updated
+        This is the first updated 123
       <main>
         <Main />
       </main>
