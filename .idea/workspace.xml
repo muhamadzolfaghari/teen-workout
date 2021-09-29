@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df52df07-f3e9-4be4-94e7-0df6cf6b1777" name="Changes" comment="First try for oauth2SignIn.ts">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/appSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/appSlice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/welcomeWizard/useSetHeightWeight.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/welcomeWizard/useSetHeightWeight.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/welcomeWizard/useWelcoming.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/welcomeWizard/useWelcoming.ts" afterDir="false" />
-    </list>
+    <list default="true" id="df52df07-f3e9-4be4-94e7-0df6cf6b1777" name="Changes" comment="First try for oauth2SignIn.ts" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,13 +53,13 @@
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
-    <property name="node.js.selected.package.eslint" value="C:\Users\Muhamad\WebstormProjects\teen-workout\node_modules\eslint" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\m.zolfaghari\AppData\Roaming\npm\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
-    <property name="ts.external.directory.path" value="C:\Users\Muhamad\WebstormProjects\teen-workout\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.2.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -131,6 +126,7 @@
       <workItem from="1632719967518" duration="16158000" />
       <workItem from="1632803601846" duration="8834000" />
       <workItem from="1632848830918" duration="7731000" />
+      <workItem from="1632948302984" duration="17000" />
     </task>
     <task id="LOCAL-00001" summary="Uploading the project files.">
       <created>1631640363088</created>
