@@ -1,7 +1,6 @@
 import { useLazyAuthGoogleQuery } from '../../features/apiSlice';
 import { useEffect } from 'react';
 import { useAppDispatch } from '../../app/hooks';
-import oauth2SignIn from '../../lib/utils/oauth2/oauth2SignIn';
 import getLocationOauth2 from '../../lib/utils/oauth2/getLocationOauth2';
 import { oauth2Changed } from '../../features/appSlice';
 import { OAUTH2_STORAGE_KEY } from '../../lib/oauth2.const';
@@ -30,7 +29,7 @@ const useWelcoming = () => {
     console.log(data);
     if (data) {
     }
-  }, [data, dispatch])
+  }, [data, dispatch]);
 
   const handleClick = () => {
     // oauth2SignIn();
@@ -39,7 +38,7 @@ const useWelcoming = () => {
   };
 
   return {
-    handleClick,
+    handleClick
   };
 };
 
