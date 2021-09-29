@@ -2,31 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df52df07-f3e9-4be4-94e7-0df6cf6b1777" name="Changes" comment="The environment was updated twice.">
-      <change afterPath="$PROJECT_DIR$/src/features/apiSlice.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useApp.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/welcomeWizard/useWelcoming.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interface/IAccessToken.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interface/IOAuth2.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interface/IUser.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/oauth2.const.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/utils/oauth2/getLocationOauth2.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/utils/oauth2/getStorageOauth2.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/utils/oauth2/oauth2SignIn.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.development" beforeDir="false" afterPath="$PROJECT_DIR$/.env.development" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/dashboardSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/dashboardSlice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/BoldText.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/BoldText.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Dashboard/Navigation/Navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Dashboard/Navigation/Navigation.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Layout/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Layout/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/Steps.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/Steps.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/Welcoming.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeWizard/Steps/Welcoming.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/appSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/appSlice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/welcomeWizardSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/welcomeWizardSlice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/Values.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/ValuesType.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/welcomeWizard/useWelcoming.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/welcomeWizard/useWelcoming.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/utils/oauth2/oauth2SignIn.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/utils/oauth2/oauth2SignIn.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,13 +60,13 @@
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
-    <property name="node.js.selected.package.eslint" value="C:\Users\m.zolfaghari\Desktop\teen-workout\node_modules\eslint" />
+    <property name="node.js.selected.package.eslint" value="C:\Users\Muhamad\WebstormProjects\teen-workout\node_modules\eslint" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\m.zolfaghari\AppData\Roaming\npm\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
-    <property name="ts.external.directory.path" value="C:\Users\m.zolfaghari\Desktop\teen-workout\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Users\Muhamad\WebstormProjects\teen-workout\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -151,6 +132,7 @@
       <workItem from="1632590174282" duration="2633000" />
       <workItem from="1632719967518" duration="16158000" />
       <workItem from="1632803601846" duration="8834000" />
+      <workItem from="1632848830918" duration="5696000" />
     </task>
     <task id="LOCAL-00001" summary="Uploading the project files.">
       <created>1631640363088</created>

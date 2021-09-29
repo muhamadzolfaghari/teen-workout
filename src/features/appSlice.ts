@@ -18,7 +18,7 @@ interface IState {
 
 const initialState: IState = {
   oauth2,
-  appMode: oauth2 ? AppMode.DASHBOARD : AppMode.WELCOME_WIZARD,
+  appMode: AppMode.WELCOME_WIZARD
 };
 
 const appSlice = createSlice({
@@ -36,14 +36,14 @@ const appSlice = createSlice({
     },
     oauth2Changed(state, action: PayloadAction<IOAuth2 | undefined>) {
       state.oauth2 = action.payload;
-    },
-  },
+    }
+  }
 });
 
 export const {
   themeModeChanged,
   themeModeToggle,
   appModeChanged,
-  oauth2Changed,
+  oauth2Changed
 } = appSlice.actions;
 export default appSlice.reducer;

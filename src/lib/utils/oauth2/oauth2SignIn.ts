@@ -14,7 +14,7 @@ function oauth2SignIn() {
     scope: 'https://www.googleapis.com/auth/drive.metadata.readonly',
     state: 'try_sample_request',
     include_granted_scopes: 'true',
-    response_type: 'token',
+    response_type: 'token'
   };
 
   // Add form parameters as hidden input values.
