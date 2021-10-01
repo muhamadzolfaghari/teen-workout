@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-import IUser from '../interface/IUser';
+import IAccount from '../interface/IAccount';
 import IMetadata from '../interface/IMetadata';
 
 export const apiSlice = createApi({
@@ -13,7 +13,7 @@ export const apiSlice = createApi({
         return `metadata`;
       },
     }),
-    authGoogle: builder.query<IUser, string>({
+    authGoogle: builder.query<IAccount, string>({
       query(accessToken) {
         return `auth/google/${accessToken}`;
       },

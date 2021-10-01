@@ -12,7 +12,7 @@ import classes from './Welcoming.module.scss';
 import useWelcoming from '../../../hooks/welcomeWizard/useWelcoming';
 
 const Welcoming = () => {
-  const { handleClick } = useWelcoming();
+  const { handleLogin } = useWelcoming();
 
   return (
     <Article>
@@ -31,7 +31,7 @@ const Welcoming = () => {
         <Button
           fullWidth
           variant={'outlined'}
-          onClick={handleClick}
+          onClick={handleLogin}
           className={classes.button}
         >
           <GoogleIcon />

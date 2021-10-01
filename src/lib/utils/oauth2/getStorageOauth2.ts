@@ -1,4 +1,4 @@
-import { OAUTH2_STORAGE_KEY } from '../../oauth2.const';
+import { OAUTH2_STORAGE_KEY } from '../../account.const';
 import IOAuth2 from '../../../interface/IOAuth2';
 
 const KEYS: (keyof IOAuth2)[] = [
