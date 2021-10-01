@@ -6,6 +6,7 @@ import { oauth2Changed } from '../../features/appSlice';
 import { OAUTH2_STORAGE_KEY } from '../../lib/oauth2.const';
 import getStorageOauth2 from '../../lib/utils/oauth2/getStorageOauth2';
 import { stepIncremented } from '../../features/welcomeWizardSlice';
+import oauth2SignIn from '../../lib/utils/oauth2/oauth2SignIn';
 
 const useWelcoming = () => {
   const dispatch = useAppDispatch();
@@ -32,7 +33,7 @@ const useWelcoming = () => {
   }, [data, dispatch]);
 
   const handleClick = () => {
-    // oauth2SignIn();
+    oauth2SignIn();
     dispatch(stepIncremented());
 
   };
