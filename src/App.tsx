@@ -3,7 +3,6 @@ import Header from './components/UI/Layout/Header/Header';
 import Main from './components/Main/Main';
 
 function App() {
-    console.log(process.env)
   return (
     <>
       <Header />
