@@ -10,36 +10,38 @@ import ArticleHeaderImage from '../../UI/Article/ArticleHeader/ArticleHeaderImag
 import ArticleFooter from '../../UI/Article/ArticleFooter/ArticleFooter';
 import classes from './Welcoming.module.scss';
 import useWelcoming from '../../../hooks/welcomeWizard/useWelcoming';
+import {CircularProgress} from '@mui/material';
 
 const Welcoming = () => {
-  const { handleLogin } = useWelcoming();
+    const {handleLogin, isFetching} = useWelcoming();
 
-  return (
-    <Article>
-      <ArticleHeader>
-        <ArticleHeaderImage src={image} alt='The man is doing climbing' />
-      </ArticleHeader>
-      <ArticleSection>
-        <Typography variant={'h3'} gutterBottom>
-          Teen Workout
-        </Typography>
-        <Description gutterBottom>
-          you will have everything you need to increase your height, for free!
-        </Description>
-      </ArticleSection>
-      <ArticleFooter type={'normal'}>
-        <Button
-          fullWidth
-          variant={'outlined'}
-          onClick={handleLogin}
-          className={classes.button}
-        >
-          <GoogleIcon />
-          <Typography component={'span'}>Continue With Google</Typography>
-        </Button>
-      </ArticleFooter>
-    </Article>
-  );
+    return (
+        <Article>
+            <ArticleHeader>
+                <ArticleHeaderImage src={image} alt="The man is doing climbing"/>
+            </ArticleHeader>
+            <ArticleSection>
+                <Typography variant={'h3'} gutterBottom>
+                    Teen Workout
+                </Typography>
+                <Description gutterBottom>
+                    you will have everything you need to increase your height, for free!
+                </Description>
+            </ArticleSection>
+            <ArticleFooter type={'normal'}>
+                <Button
+                    fullWidth
+                    variant={'outlined'}
+                    onClick={handleLogin}
+                    disabled={isFetching}
+                    className={classes.button}
+                >
+                    {!isFetching ? <GoogleIcon/> : <CircularProgress size={25}/>}
+                    <Typography component={'span'}>Continue With Google</Typography>
+                </Button>
+            </ArticleFooter>
+        </Article>
+    );
 };
 
 export default Welcoming;

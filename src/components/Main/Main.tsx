@@ -9,14 +9,14 @@ import { metadataFetched } from '../../features/appSlice';
 
 const Main = () => {
   const { appMode } = useSelector(appSelector);
-  const result = useMetadataQuery(undefined);
+  const { data: metadata } = useMetadataQuery(undefined);
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    if (result.data) {
-      dispatch(metadataFetched(result.data));
+    if (metadata) {
+      dispatch(metadataFetched(metadata));
     }
-  }, [result]);
+  }, [metadata, dispatch]);
 
   switch (appMode) {
     case AppMode.WELCOME_WIZARD:

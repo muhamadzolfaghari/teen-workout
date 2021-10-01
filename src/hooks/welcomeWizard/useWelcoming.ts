@@ -1,8 +1,11 @@
 import { useLazyAuthGoogleQuery } from '../../features/apiSlice';
 import { useEffect } from 'react';
 import { useAppDispatch } from '../../app/hooks';
-import getLocationOauth2 from '../../lib/utils/oauth2/getLocationOauth2';
-import {ACCOUNT_STORAGE_KEY, OAUTH2_STORAGE_KEY} from '../../lib/account.const';
+import getOauth2FromLocation from '../../lib/utils/oauth2/getOauth2FromLocation';
+import {
+  ACCOUNT_STORAGE_KEY,
+  OAUTH2_STORAGE_KEY,
+} from '../../lib/account.const';
 import oauth2SignIn from '../../lib/utils/oauth2/oauth2SignIn';
 import { accountChanged, oauth2Changed } from '../../features/authSlice';
 
@@ -11,7 +14,7 @@ const useWelcoming = () => {
   const [trigger, result] = useLazyAuthGoogleQuery();
 
   useEffect(() => {
-    const oauth2 = getLocationOauth2();
+    const oauth2 = getOauth2FromLocation();
 
     if (!oauth2) {
       return;
@@ -36,6 +39,7 @@ const useWelcoming = () => {
 
   return {
     handleLogin,
+    isFetching: result.isFetching,
   };
 };
 
