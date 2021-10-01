@@ -14,6 +14,7 @@ const Main = () => {
 
   useEffect(() => {
     if (metadata) {
+      console.log(metadata)
       dispatch(metadataFetched(metadata));
     }
   }, [metadata, dispatch]);

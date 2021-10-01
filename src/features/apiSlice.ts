@@ -1,6 +1,7 @@
-import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react';
 import IAccount from '../interface/IAccount';
 import IMetadata from '../interface/IMetadata';
+import IAccountProfileBody from '../interface/IAccountProfileBody';
 
 export const apiSlice = createApi({
   reducerPath: 'api',
@@ -18,8 +19,18 @@ export const apiSlice = createApi({
         return `auth/google/${accessToken}`;
       },
     }),
+    profileAccount: builder.query<undefined, IAccountProfileBody>({
+      query(body) {
+        return {
+          url: 'accounts/profile',
+          body,
+        };
+      },
+      onQueryStarted(arg, api) {
+
+      },
+    }),
   }),
 });
 
-
-export const { useLazyAuthGoogleQuery, useMetadataQuery } = apiSlice;
+export const {useLazyAuthGoogleQuery, useMetadataQuery} = apiSlice;

@@ -7,16 +7,20 @@ import Box from '@mui/material/Box';
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import LightModeRoundedIcon from '@mui/icons-material/LightModeRounded';
 import { useSelector } from 'react-redux';
-import { appSelector, useAppDispatch } from '../../../../app/hooks';
+import {
+  appSelector,
+  authSelector,
+  useAppDispatch,
+} from '../../../../app/hooks';
 import { themeModeToggle } from '../../../../features/appSlice';
 import { Avatar } from '@mui/material';
-import { deepPurple } from '@mui/material/colors';
 import clsx from 'clsx';
 import useOnlyMediumScreen from '../../../../hooks/useOnlyMediumScreen';
 import logoImage from '../../../../images/logo/logo192.png';
 
 const Header = () => {
   const dispatch = useAppDispatch();
+  const { account } = useSelector(authSelector);
   const { themeMode } = useSelector(appSelector);
   const onlyMediumScreen = useOnlyMediumScreen();
 
@@ -49,11 +53,11 @@ const Header = () => {
             <DarkModeOutlinedIcon />
           )}
         </IconButton>
-        {
+        {account && (
           <IconButton>
-            <Avatar sx={{ bgcolor: deepPurple[500] }}>OP</Avatar>
+            <Avatar src={account.image}>{account.name}</Avatar>
           </IconButton>
-        }
+        )}
       </Toolbar>
     </AppBar>
   );
