@@ -4,15 +4,13 @@ import { useAppDispatch } from '../../app/hooks';
 import getLocationOauth2 from '../../lib/utils/oauth2/getLocationOauth2';
 import { oauth2Changed } from '../../features/appSlice';
 import { OAUTH2_STORAGE_KEY } from '../../lib/oauth2.const';
-import getStorageOauth2 from '../../lib/utils/oauth2/getStorageOauth2';
 import oauth2SignIn from '../../lib/utils/oauth2/oauth2SignIn';
 
 const useWelcoming = () => {
   const dispatch = useAppDispatch();
-  const [trigger, data] = useLazyAuthGoogleQuery();
+  const [trigger, result] = useLazyAuthGoogleQuery();
 
   useEffect(() => {
-    console.log(getStorageOauth2());
     const oauth2 = getLocationOauth2();
 
     if (!oauth2) {
@@ -26,10 +24,10 @@ const useWelcoming = () => {
   }, [dispatch, trigger]);
 
   useEffect(() => {
-    console.log(data);
-    if (data) {
+    if (result.data) {
+      console.log(result.data);
     }
-  }, [data, dispatch]);
+  }, [result, dispatch]);
 
   const handleClick = () => {
     oauth2SignIn();

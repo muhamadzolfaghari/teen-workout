@@ -5,6 +5,7 @@ import { AppMode } from '../lib/app.const';
 import IOAuth2 from '../interface/IOAuth2';
 import getStorageOauth2 from '../lib/utils/oauth2/getStorageOauth2';
 import IUser from '../interface/IUser';
+import IMetadata from '../interface/IMetadata';
 
 const oauth2 = getStorageOauth2();
 type AppModeType = ValuesType<typeof AppMode>;
@@ -12,6 +13,7 @@ type AppModeType = ValuesType<typeof AppMode>;
 interface IState {
   user?: IUser;
   oauth2?: IOAuth2;
+  metadata?: IMetadata;
   appMode: AppModeType;
   themeMode?: ThemeModeType;
 }
@@ -36,6 +38,9 @@ const appSlice = createSlice({
     },
     oauth2Changed(state, action: PayloadAction<IOAuth2 | undefined>) {
       state.oauth2 = action.payload;
+    },
+    dispatchMetadata(state, action: PayloadAction<IMetadata>) {
+      state.metadata = action.payload;
     }
   }
 });
