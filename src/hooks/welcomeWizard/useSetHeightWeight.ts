@@ -1,14 +1,15 @@
 import { useFormik } from 'formik';
 import * as yup from 'yup';
 import {
-  appSelector,
+  authSelector,
   useAppDispatch,
-  welcomeWizardSelector,
+  welcomeWizardSelector
 } from '../../app/hooks';
 import { heightWeightChanged } from '../../features/welcomeWizardSlice';
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import IHeightWeight from '../../interface/IHeightWeight';
+import { useLazyProfileAccountQuery } from '../../features/apiSlice';
 
 const validationSchema = yup.object({
   weight: yup
@@ -18,19 +19,25 @@ const validationSchema = yup.object({
   height: yup
     .number()
     .required('The height is required')
-    .typeError('The value must be number'),
+    .typeError('The value must be number')
 });
 
 const defaultValues: Record<keyof IHeightWeight, string> = {
   height: '',
-  weight: '',
+  weight: ''
 };
 
 const useSetHeightWeight = () => {
   const dispatch = useAppDispatch();
-  const { metadata } = useSelector(appSelector);
+  const [trigger] = useLazyProfileAccountQuery();
   const [initialValues, setInitialValues] = useState(defaultValues);
-  const { height, weight, gender } = useSelector(welcomeWizardSelector);
+  const { oauth2, csrf } = useSelector(authSelector);
+  const {
+    height,
+    weight,
+    gender,
+    ageRange
+  } = useSelector(welcomeWizardSelector);
 
   const form = useFormik({
     initialValues,
@@ -39,21 +46,28 @@ const useSetHeightWeight = () => {
     onSubmit(values) {
       const heightWeight: IHeightWeight = {
         height: +values.height,
-        weight: +values.weight,
+        weight: +values.weight
       };
       dispatch(heightWeightChanged(heightWeight));
-
-      console.log(metadata);
+      trigger({
+        csrf: csrf!,
+        body: {
+          ...heightWeight,
+          gender: gender!,
+          age_range: ageRange!,
+          access_token: oauth2?.access_token!
+        }
+      });
 
       // dispatch(appModeChanged(AppMode.DASHBOARD));
-    },
+    }
   });
 
   useEffect(() => {
     if (height && weight) {
       setInitialValues({
         height: String(height),
-        weight: String(weight),
+        weight: String(weight)
       });
     }
   }, [height, weight]);

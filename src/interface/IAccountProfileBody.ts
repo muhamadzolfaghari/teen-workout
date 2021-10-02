@@ -1,6 +1,9 @@
 import IAccessToken from './IAccessToken';
 import IProfile from './IAccountProfile';
 
-interface IAccountProfileBody extends IAccessToken, IProfile {}
+interface IAccountProfileQuery {
+  body: {} & IAccessToken & IProfile;
+  csrf: string;
+}
 
-export default IAccountProfileBody;
+export default IAccountProfileQuery;

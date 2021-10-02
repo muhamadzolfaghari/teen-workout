@@ -9,24 +9,25 @@ const OAUTH2_KEYS: (keyof IOAuth2)[] = [
   'access_token',
   'token_type',
   'expires_in',
-  'scope',
+  'scope'
 ];
 
 const ACCOUNT_KEYS: (keyof IAccount)[] = [
   'name',
   'email',
   'image',
-  'is_completed',
+  'is_completed'
 ];
 
 interface IState {
+  csrf?: string;
   oauth2?: IOAuth2;
   account?: IAccount;
 }
 
 const initialState: IState = {
   oauth2: getDataFromStorage(OAUTH2_STORAGE_KEY, OAUTH2_KEYS),
-  account: getDataFromStorage(ACCOUNT_STORAGE_KEY, ACCOUNT_KEYS),
+  account: getDataFromStorage(ACCOUNT_STORAGE_KEY, ACCOUNT_KEYS)
 };
 
 const authSlice = createSlice({
@@ -39,8 +40,11 @@ const authSlice = createSlice({
     accountChanged(state, action: PayloadAction<IAccount | undefined>) {
       state.account = action.payload;
     },
-  },
+    csrfChanged(state, action: PayloadAction<string>) {
+      state.csrf = action.payload;
+    }
+  }
 });
 
-export const { oauth2Changed, accountChanged } = authSlice.actions;
+export const { oauth2Changed, accountChanged, csrfChanged } = authSlice.actions;
 export default authSlice.reducer;

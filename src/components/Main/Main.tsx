@@ -3,21 +3,20 @@ import { appSelector, useAppDispatch } from '../../app/hooks';
 import WelcomeWizard from '../WelcomeWizard/WelcomeWizard';
 import { AppMode } from '../../lib/app.const';
 import Dashboard from '../Dashboard/Dashboard';
-import { useMetadataQuery } from '../../features/apiSlice';
 import { useEffect } from 'react';
-import { metadataFetched } from '../../features/appSlice';
+import { useAuthCsrfQuery } from '../../features/apiSlice';
+import { csrfChanged } from '../../features/authSlice';
 
 const Main = () => {
   const { appMode } = useSelector(appSelector);
-  const { data: metadata } = useMetadataQuery(undefined);
+  const { data } = useAuthCsrfQuery(undefined);
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    if (metadata) {
-      console.log(metadata)
-      dispatch(metadataFetched(metadata));
+    if (data) {
+      dispatch(csrfChanged(data));
     }
-  }, [metadata, dispatch]);
+  }, [data, dispatch]);
 
   switch (appMode) {
     case AppMode.WELCOME_WIZARD:
