@@ -5,15 +5,22 @@ import ArticleHeader from '../../UI/Article/ArticleHeader/ArticleHeader';
 import TextField from '@mui/material/TextField';
 import classes from './SetHeightWeight.module.scss';
 import Button from './Button';
-import useSetHeightWeight from '../../../hooks/welcomeWizard/useSetHeightWeight';
+import useSetHeightWeight
+  from '../../../hooks/welcomeWizard/useSetHeightWeight';
 import Article from '../../UI/Article/Article';
-import ArticleHeaderImage from '../../UI/Article/ArticleHeader/ArticleHeaderImage';
-import standingGirlsImage from '../../../images/welcome-wizard/standing-girls.png';
-import standingBoysImage from '../../../images/welcome-wizard/standing-boys.png';
+import DoneOutlineOutlinedIcon from '@mui/icons-material/DoneOutlineOutlined';
+import ArticleHeaderImage
+  from '../../UI/Article/ArticleHeader/ArticleHeaderImage';
+import standingGirlsImage
+  from '../../../images/welcome-wizard/standing-girls.png';
+import standingBoysImage
+  from '../../../images/welcome-wizard/standing-boys.png';
 import BoldText from '../../UI/BoldText';
+import { CircularProgress } from '@mui/material';
+import Typography from '@mui/material/Typography';
 
 const SetHeightWeight = () => {
-  const { form, gender } = useSetHeightWeight();
+  const { form, gender, isFetching } = useSetHeightWeight();
 
   return (
     <form onSubmit={form.handleSubmit} className={classes.root}>
@@ -61,8 +68,11 @@ const SetHeightWeight = () => {
         </ArticleSection>
         <ArticleFooter>
           <div />
-          <Button type={'submit'} disabled={!form.dirty || !form.isValid}>
-            Finish
+          <Button type={'submit'} disabled={!form.isValid || isFetching}
+                  className={classes.button}>
+            {!isFetching ? <DoneOutlineOutlinedIcon /> :
+              <CircularProgress size={25} />}
+            <Typography component={'span'}>Finish</Typography>
           </Button>
         </ArticleFooter>
       </Article>

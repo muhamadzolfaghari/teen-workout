@@ -29,7 +29,7 @@ const defaultValues: Record<keyof IHeightWeight, string> = {
 
 const useSetHeightWeight = () => {
   const dispatch = useAppDispatch();
-  const [trigger] = useLazyProfileAccountQuery();
+  const [trigger, data] = useLazyProfileAccountQuery();
   const [initialValues, setInitialValues] = useState(defaultValues);
   const { oauth2, csrf } = useSelector(authSelector);
   const {
@@ -59,6 +59,8 @@ const useSetHeightWeight = () => {
         }
       });
 
+
+
       // dispatch(appModeChanged(AppMode.DASHBOARD));
     }
   });
@@ -72,7 +74,7 @@ const useSetHeightWeight = () => {
     }
   }, [height, weight]);
 
-  return { form, gender };
+  return { form, gender, isFetching: data.isFetching };
 };
 
 export default useSetHeightWeight;
