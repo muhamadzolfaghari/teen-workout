@@ -1,9 +1,11 @@
 import IAccessToken from './IAccessToken';
 import IProfile from './IAccountProfile';
 
-interface IAccountProfileQuery {
-  body: {} & IAccessToken & IProfile;
+interface IAccountProfileBody {
+  body: {
+    account_id: string;
+  } & IAccessToken & IProfile;
   csrf: string;
 }
 
-export default IAccountProfileQuery;
+export default IAccountProfileBody;

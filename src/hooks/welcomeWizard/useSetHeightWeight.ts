@@ -31,7 +31,7 @@ const useSetHeightWeight = () => {
   const dispatch = useAppDispatch();
   const [trigger, data] = useLazyProfileAccountQuery();
   const [initialValues, setInitialValues] = useState(defaultValues);
-  const { oauth2, csrf } = useSelector(authSelector);
+  const { oauth2, csrf, account } = useSelector(authSelector);
   const {
     height,
     weight,
@@ -55,10 +55,10 @@ const useSetHeightWeight = () => {
           ...heightWeight,
           gender: gender!,
           age_range: ageRange!,
+          account_id: account?.id!,
           access_token: oauth2?.access_token!
         }
       });
-
 
 
       // dispatch(appModeChanged(AppMode.DASHBOARD));

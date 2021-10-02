@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 import IAccount from '../interface/IAccount';
-import IAccountProfileQuery from '../interface/IAccountProfileBody';
+import IAccountProfileBody from '../interface/IAccountProfileBody';
 
 export const apiSlice = createApi({
   reducerPath: 'api',
@@ -14,7 +14,7 @@ export const apiSlice = createApi({
     authGoogle: builder.query<IAccount, string>({
       query: accessToken => `auth/google/${accessToken}`
     }),
-    profileAccount: builder.query<undefined, IAccountProfileQuery>({
+    profileAccount: builder.query<undefined, IAccountProfileBody>({
       query: ({ body, csrf }) => ({
         body,
         method: 'POST',
