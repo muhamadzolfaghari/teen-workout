@@ -7,8 +7,6 @@ import { useEffect } from 'react';
 import { useAuthCsrfQuery } from '../../features/apiSlice';
 import { csrfChanged } from '../../features/authSlice';
 import { appModeChanged } from '../../features/appSlice';
-import { stepChanged } from '../../features/welcomeWizardSlice';
-import { WelcomeWizardStep } from '../../lib/welcomeWizard.const';
 
 const Main = () => {
   const dispatch = useAppDispatch();
@@ -28,7 +26,7 @@ const Main = () => {
         dispatch(appModeChanged(AppMode.DASHBOARD));
       } else {
         dispatch(appModeChanged(AppMode.WELCOME_WIZARD));
-        dispatch(stepChanged(WelcomeWizardStep.WELCOMING));
+        // dispatch(stepChanged(WelcomeWizardStep.WELCOMING));
       }
     }
   }, [account, dispatch]);

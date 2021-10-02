@@ -8,6 +8,7 @@ import {
 } from '../../lib/account.const';
 import oauth2SignIn from '../../lib/utils/oauth2/oauth2SignIn';
 import { accountChanged, oauth2Changed } from '../../features/authSlice';
+import { stepIncremented } from '../../features/welcomeWizardSlice';
 
 const useWelcoming = () => {
   const dispatch = useAppDispatch();
@@ -30,6 +31,7 @@ const useWelcoming = () => {
     if (result.data) {
       dispatch(accountChanged(result.data));
       localStorage.setItem(ACCOUNT_STORAGE_KEY, JSON.stringify(result.data));
+      dispatch(stepIncremented());
     }
   }, [result, dispatch]);
 
