@@ -73,9 +73,9 @@ const useSetHeightWeight = () => {
       const updatedAccount = { ...account, is_completed: true } as IAccount;
       dispatch(accountChanged(updatedAccount));
       localStorage.setItem(ACCOUNT_STORAGE_KEY, JSON.stringify(updatedAccount));
-    } else {
-      dispatch(oauth2Changed())
-      dispatch(accountChanged())
+    } else if (data.status === 'rejected') {
+      dispatch(oauth2Changed());
+      dispatch(accountChanged());
       localStorage.setItem(OAUTH2_STORAGE_KEY, '');
       localStorage.setItem(ACCOUNT_STORAGE_KEY, '');
     }
