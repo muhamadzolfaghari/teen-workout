@@ -18,13 +18,16 @@ interface IState {
 const initialState: IState = {
   height: 0,
   weight: 0,
-  activeStep: WelcomeWizardStep.WELCOMING,
+  activeStep: WelcomeWizardStep.WELCOMING
 };
 
 const welcomeWizardSlice = createSlice({
   name: 'welcome-wizard',
   initialState,
   reducers: {
+    stepChanged(state, action: PayloadAction<StepType>) {
+      state.activeStep = action.payload;
+    },
     stepIncremented(state) {
       state.activeStep++;
     },
@@ -41,15 +44,16 @@ const welcomeWizardSlice = createSlice({
       const { height, weight } = action.payload;
       state.weight = weight;
       state.height = height;
-    },
-  },
+    }
+  }
 });
 
 export const {
+  stepChanged,
   genderChanged,
   stepIncremented,
   stepDecremented,
   ageRangeChanged,
-  heightWeightChanged,
+  heightWeightChanged
 } = welcomeWizardSlice.actions;
 export default welcomeWizardSlice.reducer;

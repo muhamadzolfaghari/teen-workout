@@ -10,6 +10,12 @@ import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import IHeightWeight from '../../interface/IHeightWeight';
 import { useLazyProfileAccountQuery } from '../../features/apiSlice';
+import { accountChanged, oauth2Changed } from '../../features/authSlice';
+import IAccount from '../../interface/IAccount';
+import {
+  ACCOUNT_STORAGE_KEY,
+  OAUTH2_STORAGE_KEY
+} from '../../lib/account.const';
 
 const validationSchema = yup.object({
   weight: yup
@@ -59,11 +65,21 @@ const useSetHeightWeight = () => {
           access_token: oauth2?.access_token!
         }
       });
-
-
-      // dispatch(appModeChanged(AppMode.DASHBOARD));
     }
   });
+
+  useEffect(() => {
+    if (data.status === 'fulfilled') {
+      const updatedAccount = { ...account, is_completed: true } as IAccount;
+      dispatch(accountChanged(updatedAccount));
+      localStorage.setItem(ACCOUNT_STORAGE_KEY, JSON.stringify(updatedAccount));
+    } else {
+      dispatch(oauth2Changed())
+      dispatch(accountChanged())
+      localStorage.setItem(OAUTH2_STORAGE_KEY, '');
+      localStorage.setItem(ACCOUNT_STORAGE_KEY, '');
+    }
+  }, [account, data, dispatch]);
 
   useEffect(() => {
     if (height && weight) {
