@@ -3,19 +3,17 @@ import * as yup from 'yup';
 import {
   authSelector,
   useAppDispatch,
-  welcomeWizardSelector
+  welcomeWizardSelector,
 } from '../../app/hooks';
 import { heightWeightChanged } from '../../features/welcomeWizardSlice';
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import IHeightWeight from '../../interface/IHeightWeight';
-import { useLazyProfileAccountQuery } from '../../features/apiSlice';
-import { accountChanged, oauth2Changed } from '../../features/authSlice';
+import { accountChanged } from '../../features/authSlice';
 import IAccount from '../../interface/IAccount';
-import {
-  ACCOUNT_STORAGE_KEY,
-  OAUTH2_STORAGE_KEY
-} from '../../lib/account.const';
+import { ACCOUNT_STORAGE_KEY } from '../../lib/account.const';
+import { useLazyPostProfileQuery } from '../../features/apiSlice';
+import useLogout from '../useLogout';
 
 const validationSchema = yup.object({
   weight: yup
@@ -25,25 +23,23 @@ const validationSchema = yup.object({
   height: yup
     .number()
     .required('The height is required')
-    .typeError('The value must be number')
+    .typeError('The value must be number'),
 });
 
 const defaultValues: Record<keyof IHeightWeight, string> = {
   height: '',
-  weight: ''
+  weight: '',
 };
 
 const useSetHeightWeight = () => {
   const dispatch = useAppDispatch();
-  const [trigger, data] = useLazyProfileAccountQuery();
+  const [trigger, data] = useLazyPostProfileQuery();
   const [initialValues, setInitialValues] = useState(defaultValues);
-  const { oauth2, csrf, account } = useSelector(authSelector);
-  const {
-    height,
-    weight,
-    gender,
-    ageRange
-  } = useSelector(welcomeWizardSelector);
+  const { oauth2, account } = useSelector(authSelector);
+  const { logout } = useLogout();
+  const { height, weight, gender, ageRange } = useSelector(
+    welcomeWizardSelector,
+  );
 
   const form = useFormik({
     initialValues,
@@ -52,20 +48,17 @@ const useSetHeightWeight = () => {
     onSubmit(values) {
       const heightWeight: IHeightWeight = {
         height: +values.height,
-        weight: +values.weight
+        weight: +values.weight,
       };
       dispatch(heightWeightChanged(heightWeight));
       trigger({
-        csrf: csrf!,
-        body: {
-          ...heightWeight,
-          gender: gender!,
-          age_range: ageRange!,
-          account_id: account?.id!,
-          access_token: oauth2?.access_token!
-        }
+        ...heightWeight,
+        gender: gender!,
+        age_range: ageRange!,
+        account_id: +account?.id!,
+        access_token: oauth2?.access_token!,
       });
-    }
+    },
   });
 
   useEffect(() => {
@@ -74,18 +67,15 @@ const useSetHeightWeight = () => {
       dispatch(accountChanged(updatedAccount));
       localStorage.setItem(ACCOUNT_STORAGE_KEY, JSON.stringify(updatedAccount));
     } else if (data.status === 'rejected') {
-      dispatch(oauth2Changed());
-      dispatch(accountChanged());
-      localStorage.setItem(OAUTH2_STORAGE_KEY, '');
-      localStorage.setItem(ACCOUNT_STORAGE_KEY, '');
+      logout();
     }
-  }, [account, data, dispatch]);
+    }, [account, data.status, dispatch, logout]);
 
   useEffect(() => {
     if (height && weight) {
       setInitialValues({
         height: String(height),
-        weight: String(weight)
+        weight: String(weight),
       });
     }
   }, [height, weight]);

@@ -1,5 +1,5 @@
 export default interface IAccount {
-  id: string;
+  id: number;
   name: string;
   email: string;
   image: string;
