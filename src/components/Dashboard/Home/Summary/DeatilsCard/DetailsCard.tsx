@@ -1,8 +1,11 @@
-import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
+import FavoriteBorderOutlinedIcon
+  from '@mui/icons-material/FavoriteBorderOutlined';
 import CardHeader from '@mui/material/CardHeader';
-import MonitorWeightOutlinedIcon from '@mui/icons-material/MonitorWeightOutlined';
+import MonitorWeightOutlinedIcon
+  from '@mui/icons-material/MonitorWeightOutlined';
 import CardContent from '@mui/material/CardContent';
-import AccessibilityNewOutlinedIcon from '@mui/icons-material/AccessibilityNewOutlined';
+import AccessibilityNewOutlinedIcon
+  from '@mui/icons-material/AccessibilityNewOutlined';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 // noinspection SpellCheckingInspection
 import FastfoodOutlinedIcon from '@mui/icons-material/FastfoodOutlined';
@@ -20,7 +23,8 @@ import { useSelector } from 'react-redux';
 import { authSelector } from '../../../../../app/hooks';
 import Alert, { AlertColor } from '@mui/material/Alert';
 import { CircularProgress, useTheme } from '@mui/material';
-import CheckCircleOutlineOutlinedIcon from '@mui/icons-material/CheckCircleOutlineOutlined';
+import CheckCircleOutlineOutlinedIcon
+  from '@mui/icons-material/CheckCircleOutlineOutlined';
 
 const DetailsCard = () => {
   const theme = useTheme();
@@ -33,7 +37,7 @@ const DetailsCard = () => {
 
     let message: string;
     let severity: AlertColor;
-    let value = profile.height ** 2 / profile.weight;
+    let value = Math.pow(profile.height, 2) / profile.weight;
 
     if (value < 18.5) {
       severity = 'info';
