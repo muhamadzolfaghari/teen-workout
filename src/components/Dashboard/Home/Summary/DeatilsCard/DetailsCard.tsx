@@ -37,7 +37,7 @@ const DetailsCard = () => {
 
     let message: string;
     let severity: AlertColor;
-    let value = Math.pow(profile.height, 2) / profile.weight;
+    let value = +(profile.weight / Math.pow(profile.height / 100, 2)).toFixed(2);
 
     if (value < 18.5) {
       severity = 'info';
@@ -140,4 +140,3 @@ const DetailsCard = () => {
 };
 
 export default DetailsCard;
-
