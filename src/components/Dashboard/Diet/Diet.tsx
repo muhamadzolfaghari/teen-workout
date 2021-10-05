@@ -51,7 +51,7 @@ const Diet = () => {
           Diet
         </Typography>
         <Grid container spacing={3}>
-          <Grid item md={6}>
+          <Grid item xs={12} md={6}>
             <Typography variant={'subtitle1'} gutterBottom>
               <BoldText display={'flex'} alignItems={'center'}>
                 <BreakfastDiningOutlinedIcon /> Breakfast
@@ -63,7 +63,7 @@ const Diet = () => {
               onClick={handleDietClick}
             />
           </Grid>
-          <Grid item md={6}>
+          <Grid item xs={12} md={6}>
             <Typography variant={'subtitle1'} gutterBottom>
               <BoldText display={'flex'} alignItems={'center'}>
                 <RestaurantOutlinedIcon /> Lunch
@@ -75,7 +75,7 @@ const Diet = () => {
               onClick={handleDietClick}
             />
           </Grid>
-          <Grid item md={6}>
+          <Grid item xs={12} md={6}>
             <Typography variant={'subtitle1'} gutterBottom>
               <BoldText display={'flex'} alignItems={'center'}>
                 <DinnerDiningOutlinedIcon /> Dinner
