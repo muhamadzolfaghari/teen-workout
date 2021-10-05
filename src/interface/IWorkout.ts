@@ -1,8 +1,8 @@
 export default interface IWorkout {
   id: number;
   image: string;
-  title: string;
+  name: string;
   length: string;
-  repeats: number;
+  repeat: number;
   description: string;
 }

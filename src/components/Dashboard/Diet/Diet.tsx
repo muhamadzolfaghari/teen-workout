@@ -28,4 +28,4 @@ const Diet = () => {
   );
 };
 
-export default Diet;
+export default Diet

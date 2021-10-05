@@ -14,11 +14,11 @@ const WorkoutCard = ({ item, onClick }: IProps) => (
   <Card elevation={0} onClick={onClick} sx={{ borderRadius: 0 }}>
     <CardActionArea>
       <CardHeader
-        title={<Typography variant={'h6'}>{item.title}</Typography>}
-        subheader={<BoldText>{item.length}</BoldText>}
+        title={<Typography variant={'h6'}>{item.name}</Typography>}
+        subheader={<BoldText>{item.length ?? `x ${item.repeat}`}</BoldText>}
         avatar={
           <Avatar
-            src={item.image}
+            src={process.env.REACT_APP_API_BASE_URL + item.image}
             variant={'rounded'}
             sx={{ height: 64, width: 64 }}
           />

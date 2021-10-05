@@ -6,15 +6,15 @@ import IWorkout from '../../../../interface/IWorkout';
 
 const WorkoutDetails = forwardRef(
   (
-    { image, title, length, description }: IWorkout,
+    { image, name, length, description }: IWorkout,
     ref: ForwardedRef<HTMLDivElement | null>
   ) => (
     <div ref={ref}>
       <Box display={'flex'} justifyContent={'center'}>
-        <img src={image} alt={title} className={classes.image} />
+        <img src={image} alt={name} className={classes.image} />
       </Box>
       <Typography variant={'h4'} gutterBottom>
-        {title} {length}
+        {name} {length}
       </Typography>
       <Typography gutterBottom>{description}</Typography>
     </div>

@@ -32,7 +32,7 @@ export const apiSlice = createApi({
       query: ({ access_token, account_id }) =>
         `accounts/profile/${account_id}/${access_token}`,
     }),
-    getWorkouts: builder.query<IWorkout[], IAccessToken>({
+    getWorkouts: builder.query<{ results: IWorkout[] }, IAccessToken>({
       query: ({ access_token }) =>
         `workouts/${access_token}`,
     }),

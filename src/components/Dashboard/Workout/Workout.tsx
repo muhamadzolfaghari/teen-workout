@@ -34,7 +34,8 @@ const Workout = () => {
   if (!data) {
     return (
       <Paper>
-        <Skeleton variant="text" width={200} sx={{ marginBottom: 1 }} />
+        <Skeleton variant="text" width={200} height={70} />
+        <Skeleton variant="text" width={200} sx={{ marginBottom: 0.5 }} />
         {Array(5)
           .fill(null)
           .map((item, key) => (
@@ -56,10 +57,10 @@ const Workout = () => {
           Workouts
         </Typography>
         <Typography variant={'subtitle1'} gutterBottom>
-          <BoldText>11 Minutes - {data.length} workouts</BoldText>
+          <BoldText>11 Minutes - {data.results.length} workouts</BoldText>
         </Typography>
         <Card>
-          {data.map((workout) => (
+          {data.results.map((workout) => (
             <WorkoutCard
               item={workout}
               key={workout.id}
@@ -77,7 +78,7 @@ const Workout = () => {
         </DialogActions>
       </Dialog>
     </>
-  );
+  )
 };
 
 export default Workout;
