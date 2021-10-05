@@ -1,12 +1,9 @@
-import FavoriteBorderOutlinedIcon
-  from '@mui/icons-material/FavoriteBorderOutlined';
-import CardHeader from '@mui/material/CardHeader';
-import MonitorWeightOutlinedIcon
-  from '@mui/icons-material/MonitorWeightOutlined';
-import CardContent from '@mui/material/CardContent';
-import AccessibilityNewOutlinedIcon
-  from '@mui/icons-material/AccessibilityNewOutlined';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
+import CardHeader from '@mui/material/CardHeader';
+import MonitorWeightOutlinedIcon from '@mui/icons-material/MonitorWeightOutlined';
+import CardContent from '@mui/material/CardContent';
+import AccessibilityNewOutlinedIcon from '@mui/icons-material/AccessibilityNewOutlined';
 // noinspection SpellCheckingInspection
 import FastfoodOutlinedIcon from '@mui/icons-material/FastfoodOutlined';
 import HotelOutlinedIcon from '@mui/icons-material/HotelOutlined';
@@ -22,9 +19,8 @@ import BoldText from '../../../../UI/BoldText';
 import { useSelector } from 'react-redux';
 import { authSelector } from '../../../../../app/hooks';
 import Alert, { AlertColor } from '@mui/material/Alert';
-import { useTheme } from '@mui/material';
-import CheckCircleOutlineOutlinedIcon
-  from '@mui/icons-material/CheckCircleOutlineOutlined';
+import { Tooltip, useTheme } from '@mui/material';
+import CheckCircleOutlineOutlinedIcon from '@mui/icons-material/CheckCircleOutlineOutlined';
 import Skeleton from '@mui/material/Skeleton';
 
 const DetailsCard = () => {
@@ -105,7 +101,13 @@ const DetailsCard = () => {
             justifyContent={'center'}
             color={theme.palette.success.main}
           >
-            {!bmi ? <Skeleton variant={'text'} width={80} /> : 124}
+            {!bmi ? (
+              <Skeleton variant={'text'} width={80} />
+            ) : (
+              <Tooltip title={'Under developing'}>
+                <InfoOutlinedIcon color={'disabled'} />
+              </Tooltip>
+            )}
           </Typography>
           <Typography
             variant={'h6'}
@@ -114,9 +116,14 @@ const DetailsCard = () => {
             justifyContent={'center'}
             color={theme.palette.warning.main}
           >
-            {!bmi ? <Skeleton variant={'text'} width={80} /> : 124}
+            {!bmi ? (
+              <Skeleton variant={'text'} width={80} />
+            ) : (
+              <Tooltip title={'Under developing'}>
+                <InfoOutlinedIcon color={'disabled'} />
+              </Tooltip>
+            )}
           </Typography>
-
           <Typography
             variant={'h6'}
             display={'flex'}
