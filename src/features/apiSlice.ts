@@ -3,6 +3,8 @@ import IAccount from '../interface/IAccount';
 import IPostProfileBody from '../interface/IPostProfileBody';
 import IGetProfileQuery from '../interface/IGetProfileQuery';
 import IProfile from '../interface/IProfile';
+import IWorkout from '../interface/IWorkout';
+import IAccessToken from '../interface/IAccessToken';
 
 export const apiSlice = createApi({
   reducerPath: 'api',
@@ -30,12 +32,17 @@ export const apiSlice = createApi({
       query: ({ access_token, account_id }) =>
         `accounts/profile/${account_id}/${access_token}`,
     }),
+    getWorkouts: builder.query<IWorkout[], IAccessToken>({
+      query: ({ access_token }) =>
+        `workouts/${access_token}`,
+    }),
   }),
 });
 
 export const {
   useAuthCsrfQuery,
   useGetProfileQuery,
+  useGetWorkoutsQuery,
   useLazyAuthGoogleQuery,
   useLazyPostProfileQuery,
 } = apiSlice;

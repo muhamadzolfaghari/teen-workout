@@ -22,9 +22,10 @@ import BoldText from '../../../../UI/BoldText';
 import { useSelector } from 'react-redux';
 import { authSelector } from '../../../../../app/hooks';
 import Alert, { AlertColor } from '@mui/material/Alert';
-import { CircularProgress, useTheme } from '@mui/material';
+import { useTheme } from '@mui/material';
 import CheckCircleOutlineOutlinedIcon
   from '@mui/icons-material/CheckCircleOutlineOutlined';
+import Skeleton from '@mui/material/Skeleton';
 
 const DetailsCard = () => {
   const theme = useTheme();
@@ -37,7 +38,9 @@ const DetailsCard = () => {
 
     let message: string;
     let severity: AlertColor;
-    let value = +(profile.weight / Math.pow(profile.height / 100, 2)).toFixed(2);
+    let value = +(profile.weight / Math.pow(profile.height / 100, 2)).toFixed(
+      2,
+    );
 
     if (value < 18.5) {
       severity = 'info';
@@ -97,17 +100,21 @@ const DetailsCard = () => {
           </div>
           <Typography
             variant={'h6'}
+            display={'flex'}
             fontWeight={'bold'}
+            justifyContent={'center'}
             color={theme.palette.success.main}
           >
-            124
+            {!bmi ? <Skeleton variant={'text'} width={80} /> : 124}
           </Typography>
           <Typography
             variant={'h6'}
+            display={'flex'}
             fontWeight={'bold'}
+            justifyContent={'center'}
             color={theme.palette.warning.main}
           >
-            124
+            {!bmi ? <Skeleton variant={'text'} width={80} /> : 124}
           </Typography>
 
           <Typography
@@ -129,11 +136,19 @@ const DetailsCard = () => {
                 {bmi.value}
               </>
             ) : (
-              <CircularProgress size={22} />
+              <Skeleton variant={'text'} width={80} />
             )}
           </Typography>
         </section>
-        {bmi && <Alert severity={bmi.severity}>{bmi.message}</Alert>}
+        {bmi ? (
+          <Alert severity={bmi.severity}>{bmi.message}</Alert>
+        ) : (
+          <>
+            <Skeleton variant={'text'} />
+            <Skeleton variant={'text'} />
+            <Skeleton variant={'text'} />
+          </>
+        )}
       </CardContent>
     </Card>
   );

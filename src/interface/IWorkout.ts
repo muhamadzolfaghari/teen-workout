@@ -3,5 +3,6 @@ export default interface IWorkout {
   image: string;
   title: string;
   length: string;
+  repeats: number;
   description: string;
 }

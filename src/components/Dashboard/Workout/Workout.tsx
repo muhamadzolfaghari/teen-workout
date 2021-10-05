@@ -1,17 +1,25 @@
 import * as React from 'react';
 import { useState } from 'react';
 import WorkoutDetails from './WorkoutDetails/WorkoutDetails';
-import { WORKOUTS } from '../../../lib/dashboard/workout.const';
 import Typography from '@mui/material/Typography';
 import Paper from '../../UI/Dashboard/Paper/Paper';
 import WorkoutCard from './WorkoutCard/WorkoutCard';
 import IWorkout from '../../../interface/IWorkout';
 import Card from '../../UI/Dashboard/Card/Card';
-import { Button, Dialog, DialogActions, DialogContent } from '@mui/material';
+import Button from '@mui/material/Button';
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import Skeleton from '@mui/material/Skeleton';
+import DialogContent from '@mui/material/DialogContent';
 import BoldText from '../../UI/BoldText';
+import { useGetWorkoutsQuery } from '../../../features/apiSlice';
+import { useSelector } from 'react-redux';
+import { authSelector } from '../../../app/hooks';
 
 const Workout = () => {
-  const [workout, setWorkout] = useState(WORKOUTS[0]);
+  const { oauth2 } = useSelector(authSelector);
+  const { data } = useGetWorkoutsQuery({ access_token: oauth2?.access_token! });
+  const [workout, setWorkout] = useState<IWorkout>();
   const [dialogOpen, setDialogOpen] = useState(false);
 
   const handleWorkoutClick = (workout: IWorkout) => () => {
@@ -23,6 +31,24 @@ const Workout = () => {
     setDialogOpen(false);
   };
 
+  if (!data) {
+    return (
+      <Paper>
+        <Skeleton variant="text" width={200} sx={{ marginBottom: 1 }} />
+        {Array(5)
+          .fill(null)
+          .map((item, key) => (
+            <Skeleton
+              key={key}
+              height={80}
+              variant="rectangular"
+              sx={{ marginBottom: 1 }}
+            />
+          ))}
+      </Paper>
+    );
+  }
+
   return (
     <>
       <Paper>
@@ -30,10 +56,10 @@ const Workout = () => {
           Workouts
         </Typography>
         <Typography variant={'subtitle1'} gutterBottom>
-          <BoldText>11 Minutes - {WORKOUTS.length} workouts</BoldText>
+          <BoldText>11 Minutes - {data.length} workouts</BoldText>
         </Typography>
         <Card>
-          {WORKOUTS.map((workout) => (
+          {data.map((workout) => (
             <WorkoutCard
               item={workout}
               key={workout.id}
@@ -44,7 +70,7 @@ const Workout = () => {
       </Paper>
       <Dialog open={dialogOpen}>
         <DialogContent>
-          <WorkoutDetails {...workout} />
+          {workout && <WorkoutDetails {...workout} />}
         </DialogContent>
         <DialogActions>
           <Button onClick={handleCloseDialog}>Close</Button>
