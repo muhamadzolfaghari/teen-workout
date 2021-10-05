@@ -1,11 +1,11 @@
 import * as React from 'react';
-import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import Paper from '@mui/material/Paper';
 import classes from './Navigation.module.scss';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
-import FitnessCenterOutlinedIcon from '@mui/icons-material/FitnessCenterOutlined';
+import FitnessCenterOutlinedIcon
+  from '@mui/icons-material/FitnessCenterOutlined';
 import FoodBankOutlinedIcon from '@mui/icons-material/FoodBankOutlined';
 import useOnlyMediumScreen from '../../../../hooks/useOnlyMediumScreen';
 import clsx from 'clsx';
@@ -41,10 +41,6 @@ export default function Navigation() {
           icon={<FitnessCenterOutlinedIcon />}
         />
         <BottomNavigationAction label="Diet" icon={<FoodBankOutlinedIcon />} />
-        <BottomNavigationAction
-          label="Settings"
-          icon={<SettingsOutlinedIcon />}
-        />
       </BottomNavigation>
     </Paper>
   );

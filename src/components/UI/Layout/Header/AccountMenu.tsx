@@ -23,7 +23,6 @@ export default function AccountMenu({ account }: { account: IAccount }) {
   const { logout } = useLogout();
   const dispatch = useAppDispatch();
   const { themeMode } = useSelector(appSelector);
-
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
 
@@ -44,7 +43,7 @@ export default function AccountMenu({ account }: { account: IAccount }) {
   };
 
   return (
-    <Box sx={{ marginLeft: 'auto' }}>
+    <>
       <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
         <Tooltip title="Account settings">
           <IconButton onClick={handleClick}>
@@ -108,6 +107,6 @@ export default function AccountMenu({ account }: { account: IAccount }) {
           Logout
         </MenuItem>
       </Menu>
-    </Box>
+    </>
   );
 }
