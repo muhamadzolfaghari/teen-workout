@@ -1,5 +1,6 @@
 # Teen Workout
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). This is a Progressive Web Application that enables users to store their own profile of health and shape of the body to helps them to keep in the shape of improving the muscles.
+You also want to see the server project in this case. [Teen Workout Server] repo(https://github.com/muhamadzolfaghari/teen-workout-server)
 
 To see the demo you can use a demo version of that developed on Vercel and available for the visit. [Teen Workout Demo](https://teen-workout.vercel.app/).
 
