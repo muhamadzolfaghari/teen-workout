@@ -1,7 +1,7 @@
 import Grid from '@mui/material/Grid';
 import Summary from './Summary/Summary';
 import * as React from 'react';
-import SuggestedFoods from './SuggestedFoods/SuggestedFoods';
+import RecommendationFoods from './RecommendationFoods';
 import useOnlyMediumScreen from '../../../hooks/useOnlyMediumScreen';
 
 const Home = () => {
@@ -13,7 +13,7 @@ const Home = () => {
         <Summary />
       </Grid>
       <Grid md item>
-        <SuggestedFoods />
+        <RecommendationFoods />
       </Grid>
     </Grid>
   );

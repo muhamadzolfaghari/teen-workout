@@ -39,6 +39,9 @@ export const apiSlice = createApi({
     getFoods: builder.query<{ results: IFood[] }, IAccessToken>({
       query: ({ access_token }) => `foods/${access_token}`,
     }),
+    getRecommendationFoods: builder.query<{ results: IFood[] }, IAccessToken>({
+      query: ({ access_token }) => `recommendation-foods/${access_token}`,
+    }),
   }),
 });
 
@@ -48,5 +51,6 @@ export const {
   useGetProfileQuery,
   useGetWorkoutsQuery,
   useLazyAuthGoogleQuery,
+  useGetRecommendationFoodsQuery,
   useLazyPostProfileQuery,
 } = apiSlice;
