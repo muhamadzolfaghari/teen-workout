@@ -2,16 +2,16 @@ import * as React from 'react';
 import Typography from '@mui/material/Typography';
 import Paper from '../../UI/Dashboard/Paper/Paper';
 
-const Diet = () => {
+const Settings = () => {
   return (
     <>
       <Paper>
         <Typography variant={'h4'} gutterBottom>
-          Diet
+          Settings
         </Typography>
       </Paper>
     </>
   );
 };
 
-export default Diet
+export default Settings

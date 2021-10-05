@@ -35,14 +35,14 @@ export default function Navigation() {
         value={activeMode}
         onChange={handleChange}
       >
-        <BottomNavigationAction label='Home' icon={<HomeOutlinedIcon />} />
+        <BottomNavigationAction label="Home" icon={<HomeOutlinedIcon />} />
         <BottomNavigationAction
-          label='Workout'
+          label="Workout"
           icon={<FitnessCenterOutlinedIcon />}
         />
-        <BottomNavigationAction label='Diet' icon={<FoodBankOutlinedIcon />} />
+        <BottomNavigationAction label="Diet" icon={<FoodBankOutlinedIcon />} />
         <BottomNavigationAction
-          label='Settings'
+          label="Settings"
           icon={<SettingsOutlinedIcon />}
         />
       </BottomNavigation>

@@ -33,7 +33,6 @@ const useWelcoming = () => {
     if (result.data) {
       dispatch(accountChanged(result.data));
       localStorage.setItem(ACCOUNT_STORAGE_KEY, JSON.stringify(result.data));
-      console.log('next step');
       dispatch(stepChanged(WelcomeWizardStep.SET_GENDER));
     }
   }, [result, dispatch]);

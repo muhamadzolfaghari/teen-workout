@@ -6,19 +6,23 @@ import IWorkout from '../../../../interface/IWorkout';
 
 const WorkoutDetails = forwardRef(
   (
-    { image, name, length, description }: IWorkout,
-    ref: ForwardedRef<HTMLDivElement | null>
+    { image, name, length, description, repeat }: IWorkout,
+    ref: ForwardedRef<HTMLDivElement | null>,
   ) => (
     <div ref={ref}>
       <Box display={'flex'} justifyContent={'center'}>
-        <img src={image} alt={name} className={classes.image} />
+        <img
+          src={process.env.REACT_APP_API_BASE_URL + image}
+          alt={name}
+          className={classes.image}
+        />
       </Box>
       <Typography variant={'h4'} gutterBottom>
-        {name} {length}
+        {name} {length ?? `x ${repeat}`}
       </Typography>
       <Typography gutterBottom>{description}</Typography>
     </div>
-  )
+  ),
 );
 
 WorkoutDetails.displayName = 'WorkoutDetails';

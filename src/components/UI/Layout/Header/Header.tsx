@@ -1,32 +1,18 @@
 import AppBar from '@mui/material/AppBar';
-import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import classes from './Header.module.scss';
 import Toolbar from '@mui/material/Toolbar';
 import Box from '@mui/material/Box';
-import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
-import LightModeRoundedIcon from '@mui/icons-material/LightModeRounded';
 import { useSelector } from 'react-redux';
-import {
-  appSelector,
-  authSelector,
-  useAppDispatch,
-} from '../../../../app/hooks';
-import { themeModeToggle } from '../../../../features/appSlice';
-import { Avatar } from '@mui/material';
+import { authSelector } from '../../../../app/hooks';
 import clsx from 'clsx';
 import useOnlyMediumScreen from '../../../../hooks/useOnlyMediumScreen';
 import logoImage from '../../../../images/logo/logo192.png';
+import AccountMenu from './AccountMenu';
 
 const Header = () => {
-  const dispatch = useAppDispatch();
   const { account } = useSelector(authSelector);
-  const { themeMode } = useSelector(appSelector);
   const onlyMediumScreen = useOnlyMediumScreen();
-
-  const handleThemeMode = () => {
-    dispatch(themeModeToggle());
-  };
 
   return (
     <AppBar
@@ -46,18 +32,7 @@ const Header = () => {
             Teen Workout
           </Typography>
         </Box>
-        <IconButton sx={{ marginLeft: 'auto' }} onClick={handleThemeMode}>
-          {themeMode === 'dark' ? (
-            <LightModeRoundedIcon />
-          ) : (
-            <DarkModeOutlinedIcon />
-          )}
-        </IconButton>
-        {account && (
-          <IconButton>
-            <Avatar src={account.image}>{account.name}</Avatar>
-          </IconButton>
-        )}
+        {account && <AccountMenu account={account} />}
       </Toolbar>
     </AppBar>
   );

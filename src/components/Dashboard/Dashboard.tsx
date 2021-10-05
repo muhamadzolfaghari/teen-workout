@@ -17,6 +17,8 @@ import Workout from './Workout/Workout';
 import { useGetProfileQuery } from '../../features/apiSlice';
 import useLogout from '../../hooks/useLogout';
 import { profileChanged } from '../../features/authSlice';
+import Diet from './Diet/Diet';
+import Settings from './Settings/Settings';
 
 const Dashboard = () => {
   const dispatch = useAppDispatch();
@@ -44,6 +46,10 @@ const Dashboard = () => {
         return <Home />;
       case DashboardMode.WORKOUT:
         return <Workout />;
+      case DashboardMode.DIET:
+        return <Diet />;
+      case DashboardMode.SETTINGS:
+        return <Settings />;
       default:
         return null;
     }

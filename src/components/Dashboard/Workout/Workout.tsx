@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import WorkoutDetails from './WorkoutDetails/WorkoutDetails';
 import Typography from '@mui/material/Typography';
 import Paper from '../../UI/Dashboard/Paper/Paper';
@@ -15,12 +15,23 @@ import BoldText from '../../UI/BoldText';
 import { useGetWorkoutsQuery } from '../../../features/apiSlice';
 import { useSelector } from 'react-redux';
 import { authSelector } from '../../../app/hooks';
+import useLogout from '../../../hooks/useLogout';
 
 const Workout = () => {
   const { oauth2 } = useSelector(authSelector);
-  const { data } = useGetWorkoutsQuery({ access_token: oauth2?.access_token! });
+  const { data, error } = useGetWorkoutsQuery({
+    access_token: oauth2?.access_token!,
+  });
+  const {logout} = useLogout();
   const [workout, setWorkout] = useState<IWorkout>();
   const [dialogOpen, setDialogOpen] = useState(false);
+
+
+  useEffect(() => {
+    if (error) {
+      logout()
+    }
+  }, [error, logout])
 
   const handleWorkoutClick = (workout: IWorkout) => () => {
     setWorkout(workout);
@@ -78,7 +89,7 @@ const Workout = () => {
         </DialogActions>
       </Dialog>
     </>
-  )
+  );
 };
 
 export default Workout;
