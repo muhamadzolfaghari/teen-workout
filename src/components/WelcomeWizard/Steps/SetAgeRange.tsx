@@ -50,16 +50,16 @@ const SetAgeRange = () => {
         <Button
           size={'large'}
           variant={'contained'}
-          onClick={handleClick('upper 12')}
+          onClick={handleClick('under 12')}
         >
-          <Emoji name={gender!} /> Upper 12
+          <Emoji name={gender === 'male' ? 'boy' : 'girl'} /> Under 12
         </Button>
         <Button
           size={'large'}
           variant={'contained'}
-          onClick={handleClick('under 12')}
+          onClick={handleClick('upper 12')}
         >
-          <Emoji name={gender === 'male' ? 'boy' : 'girl'} /> Under 12
+          <Emoji name={gender!} /> Upper 12
         </Button>
       </ArticleFooter>
     </Article>
