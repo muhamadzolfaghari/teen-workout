@@ -5,6 +5,7 @@ import IGetProfileQuery from '../interface/IGetProfileQuery';
 import IProfile from '../interface/IProfile';
 import IWorkout from '../interface/IWorkout';
 import IAccessToken from '../interface/IAccessToken';
+import IFood from '../interface/IFood';
 
 export const apiSlice = createApi({
   reducerPath: 'api',
@@ -33,14 +34,17 @@ export const apiSlice = createApi({
         `accounts/profile/${account_id}/${access_token}`,
     }),
     getWorkouts: builder.query<{ results: IWorkout[] }, IAccessToken>({
-      query: ({ access_token }) =>
-        `workouts/${access_token}`,
+      query: ({ access_token }) => `workouts/${access_token}`,
+    }),
+    getFoods: builder.query<{ results: IFood[] }, IAccessToken>({
+      query: ({ access_token }) => `foods/${access_token}`,
     }),
   }),
 });
 
 export const {
   useAuthCsrfQuery,
+  useGetFoodsQuery,
   useGetProfileQuery,
   useGetWorkoutsQuery,
   useLazyAuthGoogleQuery,

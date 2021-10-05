@@ -3,9 +3,8 @@ import { useEffect, useState } from 'react';
 import WorkoutDetails from './WorkoutDetails/WorkoutDetails';
 import Typography from '@mui/material/Typography';
 import Paper from '../../UI/Dashboard/Paper/Paper';
-import WorkoutCard from './WorkoutCard/WorkoutCard';
+import WorkoutCard from './WorkoutCard';
 import IWorkout from '../../../interface/IWorkout';
-import Card from '../../UI/Dashboard/Card/Card';
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
@@ -16,22 +15,22 @@ import { useGetWorkoutsQuery } from '../../../features/apiSlice';
 import { useSelector } from 'react-redux';
 import { authSelector } from '../../../app/hooks';
 import useLogout from '../../../hooks/useLogout';
+import Box from '@mui/material/Box';
 
 const Workout = () => {
   const { oauth2 } = useSelector(authSelector);
   const { data, error } = useGetWorkoutsQuery({
     access_token: oauth2?.access_token!,
   });
-  const {logout} = useLogout();
+  const { logout } = useLogout();
   const [workout, setWorkout] = useState<IWorkout>();
   const [dialogOpen, setDialogOpen] = useState(false);
 
-
   useEffect(() => {
     if (error) {
-      logout()
+      logout();
     }
-  }, [error, logout])
+  }, [error, logout]);
 
   const handleWorkoutClick = (workout: IWorkout) => () => {
     setWorkout(workout);
@@ -45,7 +44,9 @@ const Workout = () => {
   if (!data) {
     return (
       <Paper>
-        <Skeleton variant="text" width={200} height={70} />
+        <Typography variant={'h4'} gutterBottom>
+          Workouts
+        </Typography>
         <Skeleton variant="text" width={200} sx={{ marginBottom: 0.5 }} />
         {Array(5)
           .fill(null)
@@ -70,7 +71,7 @@ const Workout = () => {
         <Typography variant={'subtitle1'} gutterBottom>
           <BoldText>11 Minutes - {data.results.length} workouts</BoldText>
         </Typography>
-        <Card>
+        <Box sx={{ borderRadius: 6, overflow: 'hidden' }}>
           {data.results.map((workout) => (
             <WorkoutCard
               item={workout}
@@ -78,7 +79,7 @@ const Workout = () => {
               onClick={handleWorkoutClick(workout)}
             />
           ))}
-        </Card>
+        </Box>
       </Paper>
       <Dialog open={dialogOpen}>
         <DialogContent>

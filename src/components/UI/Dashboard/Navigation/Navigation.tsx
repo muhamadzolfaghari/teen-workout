@@ -12,7 +12,7 @@ import clsx from 'clsx';
 import { dashboardSelector, useAppDispatch } from '../../../../app/hooks';
 import { useSelector } from 'react-redux';
 import { ValuesType } from '../../../../types/ValuesType';
-import { DashboardMode } from '../../../../lib/dashboard/dashboard.const';
+import { DashboardMode } from '../../../../lib/dashboard.const';
 import { dashboardModeChanged } from '../../../Dashboard/dashboardSlice';
 
 export default function Navigation() {

@@ -17,7 +17,7 @@ import { useSelector } from 'react-redux';
 import { appSelector, useAppDispatch } from '../../../../app/hooks';
 import { themeModeToggle } from '../../../../features/appSlice';
 import { dashboardModeChanged } from '../../../Dashboard/dashboardSlice';
-import { DashboardMode } from '../../../../lib/dashboard/dashboard.const';
+import { DashboardMode } from '../../../../lib/dashboard.const';
 
 export default function AccountMenu({ account }: { account: IAccount }) {
   const { logout } = useLogout();

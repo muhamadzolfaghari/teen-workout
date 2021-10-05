@@ -1,7 +1,9 @@
+import { MealType } from '../types/MealType';
+
 export default interface IFood {
   id: number;
   image: string;
-  title: string;
+  name: string;
   description: string;
-  meal: 'breakfast' | 'dinner' | 'lunch';
+  meal_type: MealType;
 }

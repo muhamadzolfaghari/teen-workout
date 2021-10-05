@@ -12,7 +12,7 @@ import {
   dashboardSelector,
   useAppDispatch,
 } from '../../app/hooks';
-import { DashboardMode } from '../../lib/dashboard/dashboard.const';
+import { DashboardMode } from '../../lib/dashboard.const';
 import Workout from './Workout/Workout';
 import { useGetProfileQuery } from '../../features/apiSlice';
 import useLogout from '../../hooks/useLogout';

@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { ValuesType } from '../../types/ValuesType';
-import { DashboardMode } from '../../lib/dashboard/dashboard.const';
+import { DashboardMode } from '../../lib/dashboard.const';
 
 type DashboardModeType = ValuesType<typeof DashboardMode>;
 
